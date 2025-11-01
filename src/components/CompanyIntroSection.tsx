@@ -20,16 +20,16 @@ export default function CompanyIntroSection() {
               <p>Your trusted partner in global trade and sourcing.</p>
               <p>
                 Since 2008, Gateways Global has been helping businesses around
-                the world connect, source, andtradewith confidence. Based in
-                London, we bridge buyers and suppliers across continents
-                —simplifyinginternational trade through transparent processes,
-                verified networks, and reliable delivery
+                the world connect, source, and trade with confidence. Based in
+                London, we bridge buyers and suppliers across continents,
+                simplifying international trade through transparent processes,
+                verified networks, and reliable delivery.
               </p>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
               Whether you are importing raw materials, exporting finished
-              products, or exploring newmarkets,weprovide end-to-end trading
+              products, or exploring new markets, we provide end-to-end trading
               solutions designed to reduce risk, save time, and maximise your
               margins.
             </p>
