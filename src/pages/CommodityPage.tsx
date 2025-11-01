@@ -1,4 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { getCommodityById, getCommodityByCategory } from "@/data/commodities";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -30,12 +32,24 @@ const CommodityPage = () => {
   const category = getCommodityByCategory(categorySlug);
   const commodity = getCommodityById(categorySlug, commodityId);
 
+  useEffect(() => {
+    if (commodity && category) {
+      document.title = `${commodity.name} | ${category.name} - Gateways Global Ltd`;
+    }
+  }, [commodity, category]);
+
   if (!category || !commodity) {
     return <NotFound />;
   }
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{commodity.name} | {category.name} - Gateways Global Ltd</title>
+        <meta name="description" content={`Premium quality ${commodity.name.toLowerCase()} export from UK. International trade certified, serving global markets with exceptional products.`} />
+        <meta name="keywords" content={`${commodity.name}, ${category.name}, UK export, international trade, global trading, export quality`} />
+        <link rel="canonical" href={`https://gatewaysglobal.co.uk/category/${categorySlug}/${commodityId}`} />
+      </Helmet>
       <Header />
 
       {/* Hero Section */}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Globe2, ChevronDown } from "lucide-react";
@@ -135,6 +135,25 @@ const categories = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMoreOpen, setIsMoreOpen] = useState(false);
+  const moreMenuRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (moreMenuRef.current && !moreMenuRef.current.contains(event.target as Node)) {
+        setIsMoreOpen(false);
+      }
+    };
+
+    if (isMoreOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMoreOpen]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -161,7 +180,7 @@ export default function Header() {
           <NavigationMenuList className="flex items-center space-x-1">
             <NavigationMenuItem>
               <Link to="/">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
                   Home
                 </NavigationMenuLink>
               </Link>
@@ -169,7 +188,7 @@ export default function Header() {
 
             <NavigationMenuItem>
               <Link to="/about-us">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
                   About Us
                 </NavigationMenuLink>
               </Link>
@@ -204,36 +223,42 @@ export default function Header() {
 
             <NavigationMenuItem>
               <Link to="/terms-conditions">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
                   Terms & Conditions
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="px-4 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap">
+            <NavigationMenuItem className="relative" ref={moreMenuRef}>
+              <button
+                onClick={() => setIsMoreOpen(!isMoreOpen)}
+                className="group inline-flex h-10 w-max items-center justify-center rounded-full bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap"
+              >
                 More
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="transition-all duration-300 ease-in-out">
-                <div className="w-[200px] p-4 bg-background/95 backdrop-blur-sm border border-border/50 shadow-xl rounded-lg">
-                  <div className="space-y-1">
-                    <Link to="/contact-us" className="block">
-                      <div className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300 rounded-md cursor-pointer border-l-4 border-transparent hover:border-primary hover:shadow-md hover:translate-x-1 group">
-                        <span className="group-hover:font-semibold transition-all duration-300">
-                          Contact Us
-                        </span>
-                      </div>
-                    </Link>
-                    <Link to="/privacy-policy" className="block">
-                      <div className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300 rounded-md cursor-pointer border-l-4 border-transparent hover:border-primary hover:shadow-md hover:translate-x-1 group">
-                        <span className="group-hover:font-semibold transition-all duration-300">
-                          Privacy Policy
-                        </span>
-                      </div>
-                    </Link>
+                <ChevronDown className={`relative top-[1px] ml-1 h-3 w-3 transition duration-200 ${isMoreOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMoreOpen && (
+                <div className="absolute left-1/2 top-full mt-1.5 flex -translate-x-1/2 justify-center z-50">
+                  <div className="w-[200px] p-4 bg-background/95 backdrop-blur-sm border border-border/50 shadow-xl rounded-lg">
+                    <div className="space-y-1">
+                      <Link to="/contact-us" onClick={() => setIsMoreOpen(false)} className="block">
+                        <div className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300 rounded-md cursor-pointer border-l-4 border-transparent hover:border-primary hover:shadow-md hover:translate-x-1 group">
+                          <span className="group-hover:font-semibold transition-all duration-300">
+                            Contact Us
+                          </span>
+                        </div>
+                      </Link>
+                      <Link to="/privacy-policy" onClick={() => setIsMoreOpen(false)} className="block">
+                        <div className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-300 rounded-md cursor-pointer border-l-4 border-transparent hover:border-primary hover:shadow-md hover:translate-x-1 group">
+                          <span className="group-hover:font-semibold transition-all duration-300">
+                            Privacy Policy
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </NavigationMenuContent>
+              )}
             </NavigationMenuItem>
 
             {/* <NavigationMenuItem>
