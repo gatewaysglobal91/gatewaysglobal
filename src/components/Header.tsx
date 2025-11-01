@@ -161,7 +161,7 @@ export default function Header() {
           <NavigationMenuList className="flex items-center space-x-1">
             <NavigationMenuItem>
               <Link to="/">
-                <NavigationMenuLink className="px-2 py-2 text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
                   Home
                 </NavigationMenuLink>
               </Link>
@@ -169,7 +169,7 @@ export default function Header() {
 
             <NavigationMenuItem>
               <Link to="/about-us">
-                <NavigationMenuLink className="px-2 py-2 text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
                   About Us
                 </NavigationMenuLink>
               </Link>
@@ -177,7 +177,7 @@ export default function Header() {
 
             <NavigationMenuItem>
               <Link to="/products-services">
-                <NavigationMenuTrigger className="px-2 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap">
+                <NavigationMenuTrigger className="px-4 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap">
                   Products & Services
                 </NavigationMenuTrigger>
               </Link>
@@ -204,14 +204,14 @@ export default function Header() {
 
             <NavigationMenuItem>
               <Link to="/terms-conditions">
-                <NavigationMenuLink className="px-2 py-2 text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none whitespace-nowrap">
                   Terms & Conditions
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="px-2 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap">
+              <NavigationMenuTrigger className="px-4 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap">
                 More
               </NavigationMenuTrigger>
               <NavigationMenuContent className="transition-all duration-300 ease-in-out">

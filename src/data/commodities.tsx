@@ -63,7 +63,7 @@ export const commoditiesData: CommodityCategory[] = [
           <>
             The Meat, Poultry & Seafood commodity covers live animals, fresh /
             frozen meat, seafood, processed forms, and by-products. It falls
-            under HS Chapters 01, 02, 03, 16, etc., depending on product form
+            under HS code 0101–0106 (live animals), 0201–0210 (meat), 0301–0308 (fish/seafood), 1601–1605 (prepared/preserved meat/fish), depending on product form
             (fresh, frozen, processed). Export quality requires adherence to
             Codex, HACCP, GMP, food safety and veterinary standards. Inspection,
             testing (microbial, residue, sensory) and third-party certification
@@ -102,51 +102,55 @@ export const commoditiesData: CommodityCategory[] = [
         name: "Dairy & Related Products",
         description: (
           <CommodityDescription
-            intro="Comprehensive dairy portfolio covering raw milk (0401), concentrates/powders (0402, 0404), fermented products (0403), fats/butter/ghee (0405), cheese (0406), ice-cream (2105), nutrition blends (1901), lactose (1702) and casein (3501)."
+            intro="Our dairy range includes raw milk, concentrates and powders, fermented products, butter and ghee, cheese, ice cream, and specialty nutritional products."
             items={[
               item(
+                "HS code",
+                "0401–0406 covering milk, cream, whey, butter, cheese, and fermented products."
+              ),
+              item(
                 "Manufacturing",
-                "ISO 22000/HACCP/GMP with ISO 9001 QMS; batch-wise CoA and full traceability."
+                "ISO 22000, HACCP, and GMP certified with full batch traceability."
               ),
               item(
-                "Typical specs verified",
-                "fat/protein/SNF, moisture, solubility, scorched particles (powders), MFFB/FDM (cheese), peroxide/FFA (butter), pH and microbiology."
+                "Quality parameters",
+                "Fat, protein, SNF, moisture, solubility for powders; MFFB/FDM for cheese; peroxide/FFA for butter; microbiology tests."
               ),
               item(
-                "Quality checks",
-                "Allergen declaration (milk/lactose) and aflatoxin M1/antibiotic residue checks where applicable."
+                "Safety checks",
+                "Allergen declarations, aflatoxin M1 and antibiotic residue screening."
               ),
               item(
-                "Third-party inspection",
-                "independent lab testing available before shipment."
+                "Testing",
+                "Independent third-party lab certification available before shipment."
               ),
               item(
                 "Applications",
-                "retail, HORECA, bakery/confectionery, beverages, processed foods, sports/clinical nutrition, pharma excipient (lactose) and industrial casein uses."
+                "Retail, HORECA, bakery, confectionery, beverages, sports nutrition, pharmaceutical uses."
               ),
               item(
                 "Packaging",
-                "25 kg multi-wall bags/FIBCs for powders; 10–25 kg butter bricks and cheese blocks; consumer/UHT packs for retail programs."
+                "25kg bags or FIBCs for powders; 10–25kg butter blocks and cheese bricks; consumer UHT packs."
               ),
               item(
-                "Logistics",
-                "LCL for trials; 20FT/40FT FCL—reefers for chilled/frozen, dry containers for powders with desiccants/liners."
+                "Transport",
+                "LCL for samples; 20FT/40FT FCL reefers for chilled products; dry containers with desiccants for powders."
               ),
               item(
-                "Temperature guidance",
-                "fresh 0–4 °C; cheese 0–8 °C (type-dependent); butter 0–6 °C; ice-cream ≤ –18 °C; powders ambient, cool, dry."
+                "Storage",
+                "Fresh milk 0–4°C; cheese 0–8°C; butter 0–6°C; ice cream -18°C or below; powders ambient."
               ),
               item(
                 "Documentation",
-                "sanitary/health certificate, CoA, temperature logs (reefers), ISPM-15 pallets, compliant labelling/marking."
+                "Health certificates, certificates of analysis, temperature logs, ISPM-15 pallets, compliant labelling."
               ),
               item(
-                "MOQ",
-                "flexible—sample to bulk; scalable supply with consistent quality and on-time delivery."
+                "Order flexibility",
+                "Sample quantities to bulk orders with reliable delivery schedules."
               ),
               item(
-                "Quality commitment",
-                "standards-compliant production, pre-shipment QC, and customer-specific specifications supported."
+                "Service standards",
+                "Industry-compliant production, pre-shipment quality control, custom specifications supported."
               ),
             ]}
           />
@@ -177,59 +181,63 @@ export const commoditiesData: CommodityCategory[] = [
         name: "Fruits, Vegetables & Natural Produce",
         description: (
           <CommodityDescription
-            intro="Comprehensive category covering fresh, processed, finished, scrap/secondary, and value-added produce."
+            intro="We handle fresh fruits, vegetables, processed products, and value-added produce for international markets."
             items={[
               item(
-                "HS coverage",
-                "spans fresh chapters (07/08) and processed ranges (20/23), subject to final classification."
+                "HS code",
+                "0701–0714 (vegetables), 0801–0814 (fruits), 2001–2009 (processed items), 2202–2209 (juices)."
               ),
               item(
-                "Export readiness",
-                "built on GLOBALG.A.P., ISO, HACCP, and market-specific residue limits."
+                "Classification",
+                "Fresh items under HS 07/08; processed items under 20/23 per product type."
               ),
               item(
-                "Pre-shipment QC",
-                "grading, size/color/firmness checks, MRL testing, and phytosanitary certification."
+                "Certifications",
+                "GLOBALG.A.P., ISO, HACCP compliance with market-specific residue limits."
               ),
               item(
-                "Cold-chain compliance",
-                "full compliance from farm to port with temperature and humidity logging."
+                "Quality control",
+                "Grading, size and color checks, MRL testing, phytosanitary certification."
+              ),
+              item(
+                "Cold chain",
+                "Temperature-controlled transport from farm to port with humidity monitoring."
               ),
               item(
                 "Traceability",
-                "via lot/batch coding and recall procedures across all SKUs."
+                "Lot and batch coding with full recall procedures."
               ),
               item(
-                "Core markets",
-                "retail, foodservice, and industrial processors for juices, purees, frozen and dehydrated inputs."
+                "Markets",
+                "Retail, foodservice, and industrial processors for juices, purees, frozen and dehydrated products."
               ),
               item(
-                "Value segments",
-                "organic, exotic varieties, ready-to-eat salads, pre-cut packs, and mixed assortments."
+                "Specialty options",
+                "Organic varieties, exotic fruits, ready-to-eat salads, pre-cut packs, mixed assortments."
               ),
               item(
                 "Packaging",
-                "vented crates, food-grade liners, MAP/CA pouches, and palletized cartons with export markings."
+                "Vented crates, food-grade liners, MAP/CA pouches, palletized export cartons."
               ),
               item(
-                "Logistics",
-                "LCL for trial orders, FCL reefer for scale, airfreight for ultra-perishables, break-bulk for oversize bins."
+                "Shipping",
+                "LCL for samples; FCL reefer for bulk orders; airfreight for perishables; break-bulk for oversized items."
               ),
               item(
-                "Documentation set",
-                "invoice, packing list, certificate of origin, bill of lading/airway bill, phytosanitary."
+                "Documentation",
+                "Commercial invoice, packing list, certificate of origin, bill of lading, phytosanitary certificates."
               ),
               item(
-                "Third-party inspections",
-                "and load-plan verification at stuffing; sealed reefer with data loggers."
+                "Inspection",
+                "Third-party verification, sealed reefers with data loggers."
               ),
               item(
-                "Flexible MOQs",
-                "to support sampling and seasonal ramps; contract farming available for continuity."
+                "Flexible orders",
+                "Sample sizes to bulk shipments; seasonal availability; contract farming options."
               ),
               item(
-                "Compliance and risk controls",
-                "pest management, contamination prevention, and temperature excursion protocols."
+                "Quality assurance",
+                "Pest management, contamination prevention, temperature monitoring protocols."
               ),
             ]}
           />
@@ -266,22 +274,22 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Broad export category covering grains, flours, starches, bakery, pasta, and processed staples."
+            intro="We export grains, flours, starches, bakery products, pasta, and processed staples worldwide."
             items={[
-              "HS classification includes raw cereals (1001–1008) and processed items (1101–1905 range).",
-              "Compliant with ISO 22000, HACCP, and Codex Alimentarius for food safety and quality.",
-              "Product grading based on moisture, protein, gluten strength, and milling performance.",
-              "Quality control includes aflatoxin, pesticide residue, and microbiological testing.",
-              "Third-party inspections ensure weight accuracy, cleanliness, and shipment integrity.",
-              "End-use industries include bakeries, pasta and cereal producers, and food processors.",
-              "Byproducts such as bran and husk are repurposed for feed and nutritional supplements.",
-              "Packaging options: 25–50 kg PP bags, FIBC big bags, or corrugated cartons for bakery goods.",
-              "Palletized and ISPM-15 certified for safe international logistics.",
-              "Shipping via bulk vessels, LCL for samples, or reefer FCL for sensitive goods.",
-              "Full documentation set: CO, invoice, packing list, and inspection certificate.",
-              "Traceable supply chain with batch coding and quality certifications.",
-              "Flexible MOQs from pilot consignments to high-volume bulk orders.",
-              "Certified, inspected, and export-ready across multiple staple food segments.",
+              "HS code: raw cereals 1001–1008; processed items 1101–1905.",
+              "ISO 22000, HACCP, and Codex Alimentarius compliance.",
+              "Grading based on moisture, protein, gluten strength, and milling performance.",
+              "Quality testing for aflatoxin, pesticide residues, and microbiology.",
+              "Third-party inspection for weight accuracy and shipment integrity.",
+              "Serving bakeries, pasta manufacturers, cereal producers, and food processors.",
+              "Byproducts like bran and husk available for feed and supplements.",
+              "Packaging: 25–50kg PP bags, FIBC big bags, or corrugated cartons.",
+              "ISPM-15 certified for international shipping.",
+              "Bulk vessels, LCL for samples, reefer FCL for sensitive goods.",
+              "Full documentation: certificate of origin, invoice, packing list, inspection certificate.",
+              "Batch coding and quality certifications for traceability.",
+              "Orders from samples to high-volume bulk shipments.",
+              "Export-ready across all staple food categories.",
             ]}
           />
         ),
@@ -312,7 +320,7 @@ export const commoditiesData: CommodityCategory[] = [
             intro="Premium confectionery and sweet products for global markets."
             items={[
               "Comprehensive category covering cocoa, sugar confectionery, gum, chocolate, and specialty sweets.",
-              "HS scope includes raw inputs (sugars/cocoa), semi-finished compounds, and finished retail packs.",
+              "HS code: 1701–1704 (sugars), 1801–1806 (cocoa/chocolate), 1905 (biscuits/bakery goods with sugar).",
               "Food-safety systems aligned with ISO 22000/FSSC, HACCP, and Codex good manufacturing practices.",
               "Spec-driven sourcing: cocoa content, fat profile, viscosity, moisture, and water activity validated.",
               "Allergen management for milk, nuts, soy, gluten with documented changeover and traceability.",
@@ -347,21 +355,21 @@ export const commoditiesData: CommodityCategory[] = [
         name: "Beverages",
         description: (
           <CommodityDescription
-            intro="Comprehensive beverage portfolio: waters, juices, concentrates, RTD soft drinks, coffee/tea, and alcoholic lines."
+            intro="We supply waters, juices, concentrates, soft drinks, coffee, tea, and alcoholic beverages for global markets."
             items={[
-              "HS coverage spans 2201–2208 for finished goods; inputs and bases align under 2009/2101/2106 as applicable.",
-              "Built on ISO 22000/FSSC and HACCP with validated analytical methods for routine release.",
-              "Composition controls: Brix, pH/acidity, carbonation volumes, alcohol % v/v, turbidity, and color.",
-              "Safety & compliance: microbiology (TPC/yeast–mold/coliforms) and limits for additives, caffeine, and contaminants.",
-              "Sourcing traceability for fruit concentrates, coffee/tea extracts, botanicals, and sweeteners with batch coding.",
-              "Packaging formats: PET/glass/cans/aseptic cartons; bulk in drums, IBCs, flexitanks, and ISO tanks.",
-              "Stability and shelf-life verified under target climates; container QA for seal integrity and leakage.",
-              "Value-added lines: functional/fortified, low/no alcohol, sugar-free, premium origin, and private label.",
-              "Applications: retail, HORECA, travel catering, contract bottling, and industrial ingredient supply.",
-              "Environmental controls: temperature-managed logistics for heat/freeze protection; data-logged shipments.",
-              "Documentation set prepared: invoice, packing list, certificate of origin, bill of lading/airway bill, phytosanitary.",
-              "Pre-shipment QC: packaging migration, net content, labelling compliance, and load supervision.",
-              "Flexible MOQs for pilots and seasonal runs; scalable to FCL, flexitank, and bulk programs.",
+              "HS code: 2201–2208 for finished beverages; 2009/2101/2106 for bases and concentrates.",
+              "ISO 22000/FSSC and HACCP certified with validated analytical methods.",
+              "Quality testing: Brix, pH, acidity, carbonation, alcohol content, turbidity, color.",
+              "Safety compliance: microbiology testing, additive limits, caffeine content, contaminants screening.",
+              "Full batch traceability for fruit concentrates, coffee extracts, botanicals, sweeteners.",
+              "Packaging: PET bottles, glass, cans, aseptic cartons; bulk drums, IBCs, flexitanks, ISO tanks.",
+              "Shelf life validated; seal integrity and leakage testing.",
+              "Specialty products: functional beverages, low/no alcohol options, sugar-free, premium origins, private label.",
+              "Markets: retail, HORECA, travel catering, contract bottling, industrial ingredients.",
+              "Temperature-controlled shipping with data loggers for heat/freeze protection.",
+              "Documentation: invoice, packing list, certificate of origin, bill of lading, phytosanitary certificates.",
+              "Pre-shipment quality control: packaging migration tests, net content verification, labeling compliance.",
+              "Orders from samples to FCL, flexitank, and bulk programs.",
             ]}
           />
         ),
@@ -396,21 +404,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Full-spectrum category: sauce bases, finished condiments, soups, gravies, and ready-to-eat meals."
+            intro="We export sauce bases, finished condiments, soups, gravies, and ready-to-eat meals."
             items={[
-              "HS coverage spans inputs and finished goods across 09/15/20/21/16/19 chapters as applicable.",
-              "Food-safety systems: ISO 22000/FSSC, HACCP, GMP, and documented allergen controls.",
-              "Critical specs: pH/acidity, Brix, salt %, viscosity/rheology, water activity, and color.",
-              "Microbiological release: TPC, yeast/mold, coliforms; absence of key pathogens as specified.",
-              "Contaminant compliance: pesticide residues (plant inputs), mycotoxins (spices), heavy metals, additive limits.",
-              "Thermal process validation for canned/retort SKUs (F₀/PU), seam integrity, and commercial sterility.",
-              "Packaging formats: glass/PET bottles, squeeze, cans, doy/retort pouches, portion cups; bulk drums/IBCs.",
-              "Stability verified via shelf-life and transport tests; packaging migration for glass/PET/laminates/cans.",
-              "Applications: retail/private label, HORECA portion packs, and industrial ingredients for processors.",
-              "Value-added lines: clean-label, organic, low-sodium/sugar-free, fortified, and cuisine-specific recipes.",
-              "Logistics: ambient or temperature-managed; data-logged FCL/LCL with ISPM-15 palletization.",
-              "Documentation set: CO, invoice, packing list, lab results, and inspection/seal records.",
-              "Flexible MOQs from pilots to full-scale programs with end-to-end traceability and load supervision.",
+              "HS code: 0904–0910 (spices), 1509–1517 (oils), 2001–2010 (processed vegetables), 2103–2104 (sauces).",
+              "Food safety: ISO 22000/FSSC, HACCP, GMP, allergen management.",
+              "Quality specs: pH, acidity, Brix, salt content, viscosity, water activity, color.",
+              "Microbiology testing: TPC, yeast, mold, coliforms; pathogen screening.",
+              "Contaminant compliance: pesticide residues, mycotoxins, heavy metals, additive limits.",
+              "Thermal processing validation for cans/retort products; seam integrity, commercial sterility.",
+              "Packaging: glass/PET bottles, squeeze pouches, cans, retort pouches, portion cups; bulk drums/IBCs.",
+              "Shelf life and transport testing; packaging migration testing.",
+              "Markets: retail, private label, HORECA, industrial ingredients.",
+              "Specialty options: clean label, organic, low sodium, sugar-free, fortified, ethnic varieties.",
+              "Ambient or temperature-controlled shipping; ISPM-15 pallets.",
+              "Documentation: certificate of origin, invoice, packing list, lab certificates, inspection records.",
+              "Orders from samples to large-scale production runs with full traceability.",
             ]}
           />
         ),
@@ -452,21 +460,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Comprehensive category: fertilizers, crop-protection, seeds, adjuvants, and biostimulants."
+            intro="We supply fertilizers, crop protection products, seeds, adjuvants, and biostimulants to global markets."
             items={[
-              "HS scope covers 3101–3105 (fertilizers), 3808 (pesticides), 1209 (seeds), and 3824/3402 (adjuvants).",
-              "Built on ISO 9001/14001 and ISO 22000/HACCP where applicable; GLP studies; ISO/IEC 17025 testing.",
-              "Fertilizer specs verified for N-P-K assay, micronutrients, moisture, granule size/strength, and heavy metals.",
-              "Crop-protection validated for active content, impurities, emulsion/suspension stability, and storage endurance.",
-              "Seed lots certified for germination, purity, moisture, vigor, and thousand-kernel weight.",
-              "Safety & compliance: GHS/CLP classification, SDS, transport per UN hazard classes.",
-              "Applications span broadacre, horticulture, greenhouses, hydroponics, turf, and plantations.",
-              "Packaging: 25/50 kg PP sacks with liners, FIBC big bags, UN-rated drums/IBCs, water-soluble sachets.",
-              "Palletization and container QA: ISPM-15 pallets, desiccants, tamper-evident seals, ventilated/segregated loads.",
-              "Logistics: LCL for pilot orders; FCL (20FT/40FT) for scale; bulk/blend options available.",
-              "Pre-shipment QC: assay reports, stability checks, compatibility, net content, and seal verification.",
-              "Documentation set prepared: invoice, packing list, certificate of origin, SDS, and inspection certificate.",
-              "Flexible MOQs and contract programs with end-to-end traceability and load supervision.",
+              "HS code: 3101–3105 (fertilizers), 3808 (pesticides), 1209 (seeds), 3402–3404 (adjuvants).",
+              "ISO 9001/14001, ISO 22000/HACCP certified; GLP studies; ISO/IEC 17025 testing capability.",
+              "Fertilizers tested for N-P-K, micronutrients, moisture, granule strength, heavy metals.",
+              "Crop protection verified for active content, impurities, emulsion stability, shelf life.",
+              "Seeds certified for germination, purity, moisture, vigor, thousand-kernel weight.",
+              "GHS/CLP classification, SDS compliance, UN transport standards.",
+              "Applications: broadacre farming, horticulture, greenhouses, hydroponics, turf, plantations.",
+              "Packaging: 25/50kg PP sacks, FIBC big bags, UN-rated drums/IBCs, water-soluble sachets.",
+              "ISPM-15 pallets, desiccants, tamper-evident seals, ventilated/segregated loads.",
+              "LCL for samples; FCL 20FT/40FT for bulk; bulk/blend options available.",
+              "Pre-shipment QC: assay reports, stability checks, compatibility tests, seal verification.",
+              "Documentation: invoice, packing list, certificate of origin, SDS, inspection certificate.",
+              "Flexible order quantities and contract programs with full traceability.",
             ]}
           />
         ),
@@ -496,21 +504,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Broad portfolio covering inorganic, organic, polymeric, and formulated specialty chemicals."
+            intro="We supply inorganic and organic chemicals, polymeric materials, and specialty formulations worldwide."
             items={[
-              "HS scope: 28–29 series for base chemicals, 34/38/39 for specialties and blends.",
-              "Fully compliant with ISO 9001/14001/45001 and REACH/GHS/CLP regulations.",
-              "Analytical controls include purity %, assay, pH, viscosity, and specific gravity.",
-              "Safety validation for flash point, stability, and material compatibility.",
-              "Environmental compliance through VOC and heavy-metal checks.",
-              "Applications: coatings, plastics, adhesives, lubricants, cosmetics, and water treatment.",
-              "Packaged in 25/50 kg bags, 200 L drums, 1,000 L IBCs, or bulk ISO tanks.",
-              "UN-certified packaging and hazard labeling per international norms.",
-              "Pre-shipment QC ensures purity, sealing, and labeling integrity.",
-              "Documentation: COA, SDS, invoice, packing list, and inspection certificate.",
-              "Segregated shipping per hazard class; inspected and sealed containers.",
-              "Flexible MOQs—small trials to full industrial bulk loads.",
-              "Export-ready with full traceability, third-party inspection, and safety compliance.",
+              "HS code: 2801–2850 (inorganic), 2901–2942 (organic), 3401–3407 (surfactants), 3801–3809 (specialty).",
+              "ISO 9001/14001/45001, REACH, GHS, CLP compliant.",
+              "Testing: purity %, assay, pH, viscosity, specific gravity.",
+              "Safety verified: flash point, stability, material compatibility.",
+              "Environmental compliance: VOC and heavy metal screening.",
+              "Applications: coatings, plastics, adhesives, lubricants, cosmetics, water treatment.",
+              "Packaging: 25/50kg bags, 200L drums, 1000L IBCs, bulk ISO tanks.",
+              "UN-certified packaging with international hazard labeling.",
+              "Pre-shipment QC: purity verification, sealing, labeling checks.",
+              "Documentation: certificate of analysis, SDS, invoice, packing list, inspection certificate.",
+              "Hazard segregation; inspected and sealed containers.",
+              "Order flexibility: small batches to full industrial bulk loads.",
+              "Export-ready with traceability, third-party inspection, safety compliance.",
             ]}
           />
         ),
@@ -540,21 +548,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Broad portfolio spanning base inorganics/organics, solvents, intermediates, polymers, and specialty additives."
+            intro="We supply base inorganic and organic chemicals, solvents, intermediates, polymers, and specialty additives."
             items={[
-              "HS coverage across 28–29 (base chemicals), 34/35/38 (formulations), and 39 (polymers) per specification.",
-              "Quality systems aligned with ISO 9001/14001/45001; full GHS/CLP hazard classification and SDS.",
-              "Analytical release: assay/purity (GC/HPLC), water (KF), metals (ICP), pH, specific gravity, viscosity, color.",
-              "Safety validation: flash/auto-ignition, stability/compatibility, corrosion index, conductivity (ESD-sensitive grades).",
-              "Environmental compliance: VOC limits, halogen/heavy-metal screening, effluent/waste management.",
-              "Applications: coatings/inks/adhesives, plastics/rubber, water treatment, oil & gas, mining, textiles, paper, leather.",
-              "Electronics-grade options for wet-process/etch/clean where low-metal and high-purity specs are required.",
-              "Packaging: 25/50 kg bags, FIBC, 20–25 L cans, 200 L drums, 1,000 L IBCs; bulk ISO tanks/flexitanks for liquids.",
-              "UN-certified packaging with seal integrity checks, tamper evidence, and segregation by hazard class.",
-              "Logistics: LCL for trials, FCL for scale; temperature-controlled or insulated equipment as specified.",
-              "Pre-shipment QC: COA with full analytics, stability/compatibility, net content, and label verification.",
-              "Documentation set: invoice, packing list, certificate of origin, SDS, and inspection/seal records.",
-              "Flexible MOQs from pilot batches to continuous bulk supply with end-to-end traceability and load supervision.",
+              "HS code: 2801–2850 (inorganic), 2901–2942 (organic), 3204–3215 (dyes/pigments), 3401–3507 (enzymes/adhesives), 3808–3825 (specialty).",
+              "ISO 9001/14001/45001 quality systems; GHS/CLP hazard classification; SDS compliance.",
+              "Testing: assay, purity (GC/HPLC), water (KF), metals (ICP), pH, specific gravity, viscosity, color.",
+              "Safety validated: flash point, auto-ignition, stability, compatibility, corrosion index, conductivity.",
+              "Environmental compliance: VOC limits, halogen/heavy metal screening, effluent management.",
+              "Applications: coatings, inks, adhesives, plastics, rubber, water treatment, oil & gas, mining, textiles, paper, leather.",
+              "Electronics-grade options for wet-process etching and cleaning with low-metal, high-purity specs.",
+              "Packaging: 25/50kg bags, FIBC, 20–25L cans, 200L drums, 1000L IBCs; bulk ISO tanks/flexitanks.",
+              "UN-certified packaging with seal integrity checks, tamper evidence, hazard segregation.",
+              "LCL for samples; FCL for bulk; temperature-controlled or insulated equipment as needed.",
+              "Pre-shipment QC: certificate of analysis with full analytics, stability/compatibility tests, net content verification.",
+              "Documentation: invoice, packing list, certificate of origin, SDS, inspection/seal records.",
+              "Orders from pilot batches to continuous bulk supply with full traceability.",
             ]}
           />
         ),
@@ -583,21 +591,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Comprehensive portfolio: binders/resins, pigments, solvents, dispersions, additives, and finished coatings/inks."
+            intro="We supply binders and resins, pigments, solvents, dispersions, additives, and finished coatings and inks."
             items={[
-              "HS scope spans 3208–3215 for paints/inks; inputs across 2901–2905 (solvents), 3206 (pigments), 3901–3915 (polymers).",
-              "Quality systems aligned with ISO 9001/14001/45001; full GHS/CLP hazard labeling and SDS.",
-              "Performance validation per recognized methods: adhesion, corrosion, gloss, hardness, impact, and dry-time.",
-              "Composition controls: solids %, VOC, viscosity, density, particle size, and curing/film integrity.",
-              "Specialty options: waterborne, solventborne, powder, UV/EB-curable, high-solids, intumescent, marine/antifouling.",
-              "Applications: architectural/decorative, protective & marine, automotive OEM/refinish, wood, metal, coil, and packaging.",
-              "Substrate compatibility and pretreatment guidance provided for steel, aluminum, concrete, plastics, and wood.",
-              "Packaging: 1–5 L cans, 18–20 L pails, 200 L drums, 1,000 L IBCs; powder in 20–25 kg antistatic bags.",
-              "UN-rated containers for flammable/regulated items; seal integrity and closure torque verified.",
-              "Logistics: LCL for trials, FCL for scale; temperature-managed transport to avoid freezing/overheating.",
-              "Pre-shipment QC: COA with key metrics, witness panels, packaging migration/compatibility, and net-content checks.",
-              "Compliance: VOC limits, heavy-metal restrictions, and biocide content (where applicable).",
-              "Commercial readiness: color match and batch-to-batch consistency; flexible MOQs from pilots to bulk runs.",
+              "HS code: 3208–3215 (paints/inks), 2901–2905 (solvents), 3204–3206 (pigments), 3901–3915 (polymers).",
+              "ISO 9001/14001/45001 certified; GHS/CLP hazard labeling, SDS compliance.",
+              "Performance testing: adhesion, corrosion, gloss, hardness, impact, dry time.",
+              "Quality specs: solids %, VOC, viscosity, density, particle size, curing properties.",
+              "Specialty options: waterborne, solventborne, powder, UV/EB-curable, high solids, intumescent, marine antifouling.",
+              "Applications: architectural, decorative, protective, marine, automotive OEM/refinish, wood, metal, coil, packaging.",
+              "Substrate compatibility guidance for steel, aluminum, concrete, plastics, wood.",
+              "Packaging: 1–5L cans, 18–20L pails, 200L drums, 1000L IBCs; powder in 20–25kg antistatic bags.",
+              "UN-rated containers for flammable items; seal integrity and closure torque verified.",
+              "LCL for samples; FCL for bulk; temperature-controlled to prevent freezing or overheating.",
+              "Pre-shipment QC: certificate of analysis, witness panels, packaging migration tests, net content checks.",
+              "Regulatory compliance: VOC limits, heavy metal restrictions, biocide content screening.",
+              "Color matching and batch consistency; orders from samples to bulk production.",
             ]}
           />
         ),
@@ -626,21 +634,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Complete product range: polymers, elastomers, compounds, masterbatches, and recyclates."
+            intro="We supply polymers, elastomers, compounds, masterbatches, and recyclates for various industries."
             items={[
-              "HS codes span 3901–3915 (plastics) and 4001–4017 (rubber and derivatives).",
-              "Certified under ISO 9001/14001/45001 with ASTM, DIN, and ISO testing compliance.",
-              "QC parameters include MFI, density, tensile, impact, hardness, and thermal stability.",
-              "Rubber testing covers Mooney viscosity, cure time, elongation, abrasion, and hardness.",
-              "REACH/RoHS compliant; screened for heavy metals, odor, and volatile content.",
-              "Applications: automotive, packaging, electronics, construction, and footwear industries.",
-              "Specialty offerings: engineering plastics, flame-retardant, conductive, bio-based, and food-grade.",
-              "Packaging: 25 kg bags, FIBC, or crated shipments; shrink-wrapped and palletized.",
-              "Rubber supplied in bales or sheets with PE wrapping and strapped pallets.",
-              "Flexible MOQs—trial lots to full-container exports with quality certification.",
-              "Third-party inspection for loading, sampling, and seal verification.",
-              "Documentation: COA, invoice, packing list, certificate of origin, and test reports.",
-              "Export-ready consignments with end-to-end traceability and logistics control.",
+              "HS code: 3901–3915 (plastics), 4001–4017 (rubber).",
+              "ISO 9001/14001/45001 certified; ASTM, DIN, ISO testing compliance.",
+              "Testing: MFI, density, tensile strength, impact resistance, hardness, thermal stability.",
+              "Rubber specs: Mooney viscosity, cure time, elongation, abrasion resistance.",
+              "REACH/RoHS compliant; heavy metal, odor, volatile content screening.",
+              "Applications: automotive, packaging, electronics, construction, footwear.",
+              "Specialty products: engineering plastics, flame retardant, conductive, bio-based, food grade.",
+              "Packaging: 25kg bags, FIBC, crated shipments; shrink wrapped and palletized.",
+              "Rubber in bales or sheets with polyethylene wrapping, strapped pallets.",
+              "Orders from trial lots to full container exports.",
+              "Third-party inspection for loading verification, sampling, seal checks.",
+              "Documentation: certificate of analysis, invoice, packing list, certificate of origin, test reports.",
+              "Export-ready with full traceability and logistics control.",
             ]}
           />
         ),
@@ -670,21 +678,21 @@ export const commoditiesData: CommodityCategory[] = [
         ],
         description: (
           <CommodityDescription
-            intro="Broad portfolio: crude oil, refined fuels, LNG/LPG, industrial gases, lubricants, coal, coke, and biofuels."
+            intro="We supply crude oil, refined fuels, LNG/LPG, industrial gases, lubricants, coal, coke, and biofuels."
             items={[
-              "HS scope includes 2701/2704/2709/2710/2711 for fossil fuels; 2804/2811 for gases; 2207/3826/4401 for biofuels/biomass.",
-              "Quality frameworks: ISO/API/ASTM/EN test methods with documented Q&Q (quantity & quality) control.",
-              "Fuel analytics: density/API, sulfur, octane/cetane, distillation curve, flash/pour/cloud point, water/sediment.",
-              "Gas specs: purity %, Wobbe index/HHV, H₂S/mercaptans, moisture/dew point; odorization where required.",
-              "Lubricant validation: viscosity grade, VI, TBN/TAN, oxidation stability, wear metals.",
-              "Safety & compliance: SDS, GHS/CLP labeling, UN numbers, tank calibration, and seal verification.",
-              "Applications: power generation, transport fuels, petrochemical feedstocks, metals/glass/cement kilns.",
-              "Specialty gases for medical, food, welding, calibration, and electronics-grade processes.",
-              "Packaging & logistics: bulk tankers/pipelines, ISO tanks, cryogenic tanks, cylinders/bundles, rail/road, and FCL/LCL.",
-              "Monitoring: temperature/pressure logging, bonding/grounding, and vapor recovery per facility standards.",
-              "Documentation set: COA, bill of lading, ullage/calibration reports, certificate of origin, and inspection records.",
-              "Value-added: fuel additives, custom gas blends, low-sulfur and low/no-alcohol variants, and certified biofuel blends.",
-              "Commercial terms: flexible MOQs from trial liftings to long-term offtake under FOB/CIF/Delivered arrangements.",
+              "HS code: 2701–2709 (coal/coke), 2710–2713 (fuels/lubricants), 2804–2811 (gases), 2207 (ethanol), 3826 (biodiesel).",
+              "ISO/API/ASTM/EN testing methods with quantity and quality control documentation.",
+              "Fuel analysis: density, API gravity, sulfur content, octane/cetane rating, distillation curve, flash/pour/cloud point.",
+              "Gas specifications: purity %, Wobbe index, HHV, H₂S/mercaptans, moisture/dew point; odorization as required.",
+              "Lubricant testing: viscosity grade, VI, TBN/TAN, oxidation stability, wear metals.",
+              "Safety compliance: SDS, GHS/CLP labeling, UN numbers, tank calibration, seal verification.",
+              "Applications: power generation, transport fuels, petrochemical feedstocks, metals processing, glass/cement kilns.",
+              "Specialty gases for medical, food, welding, calibration, electronics-grade processes.",
+              "Packaging and logistics: bulk tankers, pipelines, ISO tanks, cryogenic tanks, cylinders, rail/road transport.",
+              "Temperature and pressure monitoring, bonding/grounding, vapor recovery per facility standards.",
+              "Documentation: certificate of analysis, bill of lading, ullage/calibration reports, certificate of origin, inspection records.",
+              "Specialty options: fuel additives, custom gas blends, low-sulfur variants, certified biofuel blends.",
+              "Flexible order quantities from trial liftings to long-term contracts under FOB/CIF/Delivered terms.",
             ]}
           />
         ),
@@ -728,7 +736,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Category spans wet-salted/wet-blue/crust hides, finished leathers, and made-ups (belts, wallets, bags, footwear uppers)."
             items={[
-              "HS coverage: 4101–4107 (hides/skins), 4112–4115 (leather), 4202/4203 (articles), 6406 (parts).",
+              "HS code: 4101–4115 (leather/skins), 4201–4203 (articles), 6403–6406 (footwear/parts).",
               "Standards-driven QA: thickness, yield, tensile/tear, flex, abrasion, finish adhesion, and grain uniformity.",
               "Chemical compliance: chromium VI, azo dyes, PCP, formaldehyde, heavy metals; compliant finishing systems.",
               "Color performance: rub fastness (dry/wet), migration, lightfastness per buyer specification.",
@@ -772,7 +780,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio covers fibers, yarns, woven/knitted fabrics, technical textiles, and finishes."
             items={[
-              "HS scope: 50–55 (natural/man-made fibers & yarns), 58–60 (special fabrics, knitted), 52/54 (cotton/MMF).",
+              "HS code: 5001–5509 (fibers/yarns), 5601–5705 (fabrics/woven), 5801–6006 (special fabrics/knitted).",
               "Quality specs: GSM, count/denier/tex, ends-picks, course/wale, tensile/tear/burst, evenness.",
               "Dimensional stability: shrinkage, skew, spirality; relaxation/wash protocols agreed.",
               "Color/appearance: shade approval, Lab* tolerance, colorfastness to wash, rub, perspiration, and light.",
@@ -815,7 +823,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Coverage includes knitwear, wovens, denim, outerwear, activewear, uniforms, and kidswear."
             items={[
-              "HS scope: 61 (knit apparel), 62 (woven apparel), 63 (selected made-ups/accessories).",
+              "HS code: 6101–6117 (knit apparel), 6201–6217 (woven apparel), 6301–6310 (made-ups).",
               "Quality gates: fit/measurement specs, workmanship AQL, seam strength/slippage, stitch density.",
               "Performance tests: colorfastness (wash/rub/perspiration/light), pilling, snag, dimensional stability.",
               "Safety/compliance: needle detection, metal-hardware pull, sharp-point checks; chemical conformity.",
@@ -858,7 +866,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Category spans bed/bath linen, curtains, upholstery, table linen, rugs, carpets, and mats."
             items={[
-              "HS scope: 63 (home textiles/made-ups), 57 (carpets/rugs), 58–60 (decorative/special fabrics).",
+              "HS code: 5701–5705 (carpets/rugs), 6301–6310 (home textiles/made-ups), 5801–5811 (decorative fabrics).",
               "Quality metrics: GSM/ply, absorbency, tensile/tear/burst, seam strength, tuft bind (carpets).",
               "Durability: abrasion (Martindale), pilling, snagging, and stitch/slippage resistance.",
               "Colorfastness: wash, rub, perspiration, water/chlorine, and light as per end-use.",
@@ -901,7 +909,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Range covers handbags, small leather goods, belts, scarves, hats, wallets, and fashion jewelry."
             items={[
-              "HS scope: 4202/4203 (bags/leather goods), 6117/6217 (accessories), 6505 (headgear), 7117 (imitation jewelry).",
+              "HS code: 4201–4203 (bags/leather goods), 6217 (accessories), 6504–6505 (headgear), 7113/7117 (jewelry).",
               "Material QA: leather grade/finish, fabric strength, hardware plating, zipper quality, and lining specs.",
               "Mechanical tests: seam/handle pull, rivet attachment, buckle/closure fatigue, stitch density.",
               "Chemical compliance: nickel release, lead/cadmium limits, azo dyes, phthalates where applicable.",
@@ -959,7 +967,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio covers construction, mining, material handling, metalworking, and process-plant machinery."
             items={[
-              "HS scope spans machinery chapters (84) and parts/accessories per application.",
+              "HS code: 8401–8486 (machinery), 8704–8705 (trucks/special vehicles), 8901–8908 (ships/boats).",
               "Engineering QA: dimensional accuracy, load rating, duty cycle, and vibration/noise thresholds.",
               "Materials and finishes verified for hardness, weld integrity, coating thickness, and corrosion resistance.",
               "Powertrain/hydraulics validated for pressure, flow, leak tightness, and thermal stability.",
@@ -1002,7 +1010,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Coverage includes diesel/gas engines, gensets, turbines, alternators, switchgear, and balance-of-plant."
             items={[
-              "HS scope primarily 84/85 for engines, generators, and electrical apparatus.",
+              "HS code: 8401–8413 (engines/turbines), 8501–8504 (generators/transformers), 8506–8507 (batteries).",
               "Performance validation: kW/kVA output, efficiency, PF, harmonics, voltage regulation, and transient response.",
               "Fuel and cooling systems tested for consumption, emissions readiness, and thermal margins.",
               "Acoustic and vibration levels measured against site requirements; enclosure IP rating confirmed.",
@@ -1044,7 +1052,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Range includes switchgear, drives, transformers, cables, control panels, sensors, and industrial electronics."
             items={[
-              "HS scope: 85 series for electrical machinery and equipment; selected 90 for instruments.",
+              "HS code: 8504–8538 (transformers/switches), 8544 (cables), 8531–8543 (electrical equipment), 9025–9029 (instruments).",
               "Electrical ratings verified for voltage class, short-circuit withstand, insulation, and temperature rise.",
               "Power quality: THD, EMC/EMI compatibility, surge immunity, and grounding/earthing design.",
               "Control and automation readiness with PLC/SCADA interfaces and industrial communication protocols.",
@@ -1087,7 +1095,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio spans passenger/commercial vehicles, buses, trailers, off-highway equipment, and material movers."
             items={[
-              "HS scope primarily 87 series for vehicles and parts, plus 86 for rail where applicable.",
+              "HS code: 8601–8609 (rail vehicles), 8701–8716 (motor vehicles/parts), 8801–8803 (aircraft).",
               "Engineering validation: chassis strength, braking, steering, NVH, and durability cycles.",
               "Powertrain options: ICE, hybrid, and electric; charging interface and energy management readiness.",
               "Safety features: structural integrity, restraint systems, lighting, and driver-assist readiness per target specs.",
@@ -1125,7 +1133,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Coverage includes hand tools, power tools, cutting tools, metrology, fixtures, and test instruments."
             items={[
-              "HS scope: 82 (tools), 84 (machine-tool parts), 90 (measuring/testing) per specification.",
+              "HS code: 8201–8215 (hand tools), 8466–8467 (machine tools), 9018–9031 (measuring/testing instruments).",
               "Material and heat-treat control for hardness, toughness, and wear resistance.",
               "Cutting performance validated for tool life, geometry, coating adhesion, and runout/accuracy.",
               "Metrology accuracy certified with calibration traceability and uncertainty budgets.",
@@ -1178,7 +1186,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Coverage: ferrous (carbon/alloy/stainless) and non-ferrous (Al, Cu, Ni, Zn, Ti) metals and master alloys."
             items={[
-              "HS scope: 72–76, 78–81 for primary/semis; 79/80/81 for specialty alloys as specified.",
+              "HS code: 7201–7229 (iron/steel), 7301–7317 (steel articles), 7601–7617 (aluminum), 7401–7419 (copper), 7801–8113 (other metals).",
               "Forms: ingots, billets, blooms, slabs, coils, sheets/plates, bars/rods, wire, tubes, forgings, castings.",
               "Specs: chemical composition, grain size, inclusion control, and heat treatment (anneal, quench/temper).",
               "Mechanical properties to order: UTS/Y.S., elongation, hardness, impact, fatigue, creep where relevant.",
@@ -1221,7 +1229,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio: laser/plasma cut parts, formed/welded structures, sheet-metal enclosures, frames, railings, and assemblies."
             items={[
-              "HS scope: 73–83 for steel/metal articles, with part-specific headings per design.",
+              "HS code: 7301–7326 (steel articles), 7411–7419 (copper articles), 7614–7616 (aluminum articles), 8201–8215 (tools).",
               "Manufacturing: CNC laser/punch, press brake, roll forming, stamping, machining, robotic welding.",
               "Welding/WPS: qualified procedures, welder quals, distortion control, and weld NDT (VT/MT/PT/UT).",
               "Finishes: galvanizing, electro-zinc, anodizing (Al), powder coating, liquid paint, passivation.",
@@ -1266,7 +1274,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Category spans cement, aggregates, blocks/bricks, rebar/structurals, roofing, insulation, glass, doors/windows, and tiles."
             items={[
-              "HS scope: 68–69 (minerals/ceramics), 70 (glass), 72–73 (steel), 76 (aluminum), 39 (plastics), 44 (wood).",
+              "HS code: 6801–6815 (stone/cement), 6901–6924 (ceramics), 7001–7020 (glass), 3901–3926 (plastics), 4401–4419 (wood).",
               "Performance specs: compressive/flexural strength, density, water absorption, frost resistance, and dimensional tolerances.",
               "Durability: corrosion protection, alkali-silica control, sulfate resistance, UV/weathering performance.",
               "Fire & safety: fire rating/class, smoke/toxicity where applicable, and slip/impact resistance for floors.",
@@ -1308,7 +1316,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Range: fasteners, anchors, hinges, locks, handles, glass/door fittings, plumbing/brassware, and cabinet hardware."
             items={[
-              "HS scope: 73 (steel articles), 74 (copper-alloy fittings), 83 (misc. hardware), 82 (hand tools).",
+              "HS code: 7307–7326 (steel fasteners), 7411–7419 (copper fittings), 8301–8309 (misc. hardware), 8201–8215 (tools).",
               "Materials: carbon/stainless steel, brass/bronze, aluminum, zinc alloys; heat treatment where required.",
               "Finishes: electro-zinc, hot-dip galvanizing, nickel/chrome, PVD, anodizing, powder coat; salt-spray targets.",
               "Dimensional/functional checks: thread gauges, torque/drive, pull-out/push-in, cycle and fatigue tests.",
@@ -1352,7 +1360,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio: stainless-steel cookware/utensils, cast aluminum, glassware, ceramic tableware, plastic storage, and basic labware."
             items={[
-              "HS scope: 7323 (steel household), 3924 (plastics), 7013/7017 (glass/table & lab), 6911–6912 (ceramics), 7615 (aluminum).",
+              "HS code: 7323–7324 (steel household), 3919–3924 (plastics), 7010–7018 (glass/labware), 6911–6914 (ceramics), 7615 (aluminum).",
               "Food-contact quality: migration limits, metal release, BPA-free plastics as specified.",
               "Performance: thickness/weight, thermal conductivity, non-stick adhesion, impact/chip resistance, dishwasher/oven safety.",
               "Labware basics: beakers, flasks, cylinders; heat/chemical shock and dimensional accuracy checks.",
@@ -1395,7 +1403,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Range covers fine jewelry (gold/silver/platinum), fashion jewelry, loose diamonds, and colored gemstones."
             items={[
-              "HS scope: 7102–7104 (diamonds/gems), 7113 (precious-metal jewelry), 7117 (imitation jewelry), 7115 (parts).",
+              "HS code: 7102–7104 (diamonds/gems), 7106–7108 (silver/gold/platinum), 7113–7114 (precious jewelry), 7117 (imitation jewelry).",
               "Metal quality: fineness/hallmark, karat accuracy, plating thickness (Au/Rh/Pd), solder integrity.",
               "Gem parameters: 4Cs for diamonds; color/clarity/origin and treatment disclosure for colored stones.",
               "Mechanical checks: prong/setting security, clasp/hinge fatigue, and chain tensile tests.",
@@ -1451,7 +1459,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio spans round logs, sawn timber, KD/AD lumber, veneers, plywood, LVL/CLT, MDF/HDF, and chips/pellets."
             items={[
-              "HS scope: 4401–4413 for raw/processed wood and wood-based panels; 4415 for crates/pallets.",
+              "HS code: 4401–4413 (wood/logs/boards), 4410–4413 (plywood/panels), 4415–4421 (wooden articles).",
               "Moisture management: kiln/air-dried to target MC with calibrated meters and conditioning protocols.",
               "Grading per species and use: appearance/structural grades, knot/defect limits, straightness, and warpage.",
               "Mechanical properties verified: density, MOR/MOE, screw withdrawal, bond strength for panels.",
@@ -1494,7 +1502,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Coverage: case goods, seating, dining/bedroom sets, cabinetry, modular/flat-pack, outdoor, and upholstery."
             items={[
-              "HS scope: 9401–9403 for furniture; 9404 for mattresses/cushions; 4414/4418 for joinery as applicable.",
+              "HS code: 9401–9403 (furniture), 9404 (mattresses/assemblies), 9405–9406 (lamps/illumination), 4414/4418 (joinery).",
               "Engineering & durability: static/impact/cycle tests for chairs, tables, and beds to buyer standards.",
               "Materials: solid wood, engineered panels, metal frames, rattan, and compliant foam/fabrics.",
               "Finish systems: PU/AC/waterborne/oil; stain and color matching with gloss and adhesion targets.",
@@ -1533,7 +1541,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Range includes kitchenware (boards, bowls, utensils), home décor, organizers, toys/games, and pallets/crates."
             items={[
-              "HS scope: 4415 (pallets/crates), 4419 (table/kitchenware), 4420 (ornamental articles), 9503 (selected toys).",
+              "HS code: 4415 (pallets/crates), 4419 (table/kitchenware), 4420 (ornamental articles), 9503 (selected toys).",
               "Material selection by species for food-contact, durability, and appearance; grain/orientation controlled.",
               "Surface & finish: food-safe oils/waxes or compliant coatings; smoothness and edge radius verified.",
               "Dimensional accuracy and warp control through proper drying, lamination, and joint design.",
@@ -1589,7 +1597,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Full-spectrum coverage: gold, silver, platinum, palladium, jewelry articles, and bullion/coins for investment and industry."
             items={[
-              "HS scope includes unwrought/semis (chapters 71xx), jewelry articles (7113), and coins/medals (7118); scrap/recovered inputs (7112).",
+              "HS code: 7106–7108 (silver/gold/platinum unwrought), 7110 (manufacturing), 7112 (scrap), 7113–7114 (jewelry), 7118 (coins).",
               "Purity to market fineness: Au 995–999.9‰, Ag 999–999.9‰, Pt/Pd 999.5‰ with serialized traceability.",
               "Assay methods: fire assay for Au/Ag; instrumental analysis (e.g., XRF/ICP) for multi-element verification.",
               "Dimensional and weight tolerances controlled for bars/blanks; hallmarking and fineness marks on jewelry.",
@@ -1640,7 +1648,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Category includes indoor/outdoor toys, puzzles, educational kits, playground sets, and sports gear."
             items={[
-              "HS scope: 9503 (toys), 9504 (games), 9506 (sports), and 9508 (rides/amusement items).",
+              "HS code: 9503 (toys), 9504 (games/puzzles), 9506 (sports equipment), 9508 (rides/amusement).",
               "Materials: plastic, wood, rubber, metal, fabric composites; non-toxic paints and finishes.",
               "Safety standards: EN 71, ASTM F963, ISO 8124 for mechanical, chemical, and flammability safety.",
               "Testing: small parts, tension, torque, drop, and chemical migration (phthalates, heavy metals).",
@@ -1678,7 +1686,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Covers art supplies, musical instruments, educational aids, stationery, and creative kits."
             items={[
-              "HS scope: 9201–9209 (musical instruments), 9609 (stationery), 4901–4905 (books/prints).",
+              "HS code: 9201–9209 (musical instruments), 9609 (stationery), 4901–4905 (books/prints).",
               "Materials: wood, metal, paper, plastics, textiles depending on product type.",
               "Art media tested for pigment concentration, non-toxicity, and color permanence.",
               "Instruments validated for tuning accuracy, tone stability, and component finishing.",
@@ -1720,7 +1728,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Portfolio includes handmade crafts, glass/ceramic décor, souvenirs, candles, and seasonal gifts."
             items={[
-              "HS scope: 6913, 7013, 8306, 9505, 9602–9606, 9703 depending on material and finish.",
+              "HS code: 6913–6914 (ceramics), 7013–7018 (glass), 8306 (statues), 9602–9606 (misc. items), 9703 (collections).",
               "Materials: metal, wood, glass, ceramic, resin, textiles, recycled composites.",
               "Finishing: polish, enamel, plating, coating, glazing, and hand-painting verified for durability.",
               "Design validation: dimensional stability, balance, and adhesion of decorative elements.",
@@ -1761,7 +1769,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Category covers handbags, wallets, belts, scarves, sunglasses, watches, and jewelry accessories."
             items={[
-              "HS scope: 4202/4203 (bags/leather goods), 6217/6117 (accessories), 7117 (jewelry), 9004 (eyewear).",
+              "HS code: 4202–4203 (bags/leather), 6101–6117/6201–6217 (apparel accessories), 7117 (jewelry), 9004 (eyewear).",
               "Material QA: leather/fabric strength, plating thickness, clasp/buckle pull, and seam durability.",
               "Finishes verified for colorfastness, anti-tarnish, and scratch resistance.",
               "Safety compliance: nickel release, lead/cadmium, azo dye and phthalate content control.",
@@ -1803,7 +1811,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Range includes home essentials, storage, cleaning tools, organizers, utensils, and lifestyle items."
             items={[
-              "HS scope: 3924 (plastics), 7323 (steel), 7615 (aluminum), 6912 (ceramics), 7013 (glassware).",
+              "HS code: 3924 (plastics), 7323–7324 (steel household), 7615 (aluminum), 6911–6914 (ceramics), 7013–7018 (glassware).",
               "Quality metrics: thickness, impact strength, finish uniformity, and ergonomic performance.",
               "Food-contact and hygiene compliance per relevant safety standards.",
               "Durability tests for handles, seals, hinges, and coating adhesion under daily-use conditions.",
@@ -1858,7 +1866,7 @@ export const commoditiesData: CommodityCategory[] = [
           <CommodityDescription
             intro="Category includes antique furniture, jewelry, paintings, coins, manuscripts, and archaeological artifacts."
             items={[
-              "HS scope: 9701 (paintings), 9702 (antiques over 100 years old), 9705 (collections), 9706 (archaeological objects).",
+              "HS code: 9701 (paintings/sculptures), 9702 (antiques >100 years), 9704 (stamps), 9705 (collections), 9706 (archaeological items).",
               "Authenticity: age verification, provenance documentation, and expert appraisal certificates.",
               "Material preservation: humidity/temperature control, pest and corrosion prevention.",
               "Conservation standards: museum-grade restoration materials and reversible methods.",
