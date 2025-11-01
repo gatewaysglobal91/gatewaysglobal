@@ -258,9 +258,5 @@ app.use("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Backend server running on port ${PORT}`);
   console.log(`📧 Email service configured for Outlook`);
-  console.log(
-    `🌐 Frontend URL: ${process.env.FRONTEND_URL || "http://localhost:5173"}`
-  );
 });

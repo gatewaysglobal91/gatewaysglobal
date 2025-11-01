@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import NotFound from "./NotFound";
+import LazyImage from "@/components/LazyImage";
 
 const CategoryPage = () => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
@@ -128,7 +129,7 @@ const CategoryPage = () => {
                                 }
                               `}
                             >
-                              <img
+                              <LazyImage
                                 src={img}
                                 alt={`${commodity.name} ${imgIndex + 1}`}
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

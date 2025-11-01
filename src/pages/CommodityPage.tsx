@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft, Check } from "lucide-react";
 import NotFound from "./NotFound";
+import LazyImage from "@/components/LazyImage";
 
 const CommodityPage = () => {
   const { categorySlug, commodityId } = useParams<{
@@ -105,7 +106,7 @@ const CommodityPage = () => {
                   key={index}
                   className="aspect-video bg-muted rounded-lg overflow-hidden"
                 >
-                  <img
+                  <LazyImage
                     src={image}
                     alt={`${commodity.name} ${index + 1}`}
                     className="w-full h-full object-cover"

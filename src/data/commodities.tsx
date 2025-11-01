@@ -1,182 +1,3 @@
-import BeefPoultryFish from "@/assets/seafood/Beef-Poultry-Fish.webp";
-import Meat2 from "@/assets/seafood/meat-2.webp";
-import MeatPoultrySeafood from "@/assets/seafood/meat-poultry-seafood.webp";
-import MeatPoultrySeafood2 from "@/assets/seafood/meat-seafood-34-thumb.webp";
-
-import Dairy1 from "@/assets/dairy/d1.webp";
-import Dairy2 from "@/assets/dairy/d2.webp";
-import Dairy3 from "@/assets/dairy/d3.webp";
-import Dairy4 from "@/assets/dairy/d4.webp";
-import Dairy5 from "@/assets/dairy/d5.webp";
-
-import Vagies1 from "@/assets/vagies/v1.webp";
-import Vagies2 from "@/assets/vagies/v2.webp";
-import Vagies3 from "@/assets/vagies/v3.webp";
-import Vagies4 from "@/assets/vagies/v4.webp";
-
-import Bakery1 from "@/assets/bakery/b1.avif";
-import Bakery2 from "@/assets/bakery/b2.avif";
-import Bakery3 from "@/assets/bakery/b3.avif";
-import Bakery4 from "@/assets/bakery/b4.avif";
-
-import Sweet1 from "@/assets/sweet/s1.avif";
-import Sweet2 from "@/assets/sweet/s2.avif";
-import Sweet3 from "@/assets/sweet/s3.avif";
-
-import Beverage1 from "@/assets/beverages/be1.avif";
-import Beverage2 from "@/assets/beverages/be2.avif";
-import Beverage3 from "@/assets/beverages/be3.avif";
-import Beverage4 from "@/assets/beverages/be4.avif";
-
-import Sauces1 from "@/assets/sauces/sa1.avif";
-import Sauces2 from "@/assets/sauces/sa2.avif";
-import Sauces3 from "@/assets/sauces/sa3.avif";
-import Sauces4 from "@/assets/sauces/sa4.avif";
-
-import Agricultural1 from "@/assets/agricultural/a1.avif";
-import Agricultural2 from "@/assets/agricultural/a2.avif";
-import Agricultural3 from "@/assets/agricultural/a3.avif";
-import Agricultural4 from "@/assets/agricultural/a4.avif";
-
-import Chemical1 from "@/assets/chemical/c1.webp";
-import Chemical2 from "@/assets/chemical/c2.webp";
-import Chemical3 from "@/assets/chemical/c3.avif";
-import Chemical4 from "@/assets/chemical/c4.avif";
-
-import Dyes1 from "@/assets/dyes/dy1.avif";
-import Dyes2 from "@/assets/dyes/dy2.avif";
-import Dyes3 from "@/assets/dyes/dy3.avif";
-import Dyes4 from "@/assets/dyes/dy4.avif";
-import Dyes5 from "@/assets/dyes/dy5.avif";
-
-import Paint1 from "@/assets/paints/p1.avif";
-import Paint2 from "@/assets/paints/p2.avif";
-import Paint3 from "@/assets/paints/p3.avif";
-
-import Rubber1 from "@/assets/rubber/r1.avif";
-import Rubber2 from "@/assets/rubber/r2.avif";
-import Rubber3 from "@/assets/rubber/r3.avif";
-
-import Gas1 from "@/assets/gas/g1.avif";
-import Gas2 from "@/assets/gas/g2.avif";
-import Gas3 from "@/assets/gas/g3.avif";
-import Gas4 from "@/assets/gas/g4.webp";
-
-import Leather1 from "@/assets/leather/le1.avif";
-import Leather2 from "@/assets/leather/le2.avif";
-import Leather3 from "@/assets/leather/le3.avif";
-import Leather4 from "@/assets/leather/le4.avif";
-
-import Textile1 from "@/assets/textile/te1.avif";
-import Textile2 from "@/assets/textile/te2.avif";
-import Textile3 from "@/assets/textile/te3.avif";
-import Textile4 from "@/assets/textile/te4.avif";
-
-import Garments1 from "@/assets/garments/ga1.avif";
-import Garments2 from "@/assets/garments/ga2.avif";
-import Garments3 from "@/assets/garments/ga3.avif";
-import Garments4 from "@/assets/garments/ga4.avif";
-
-import Hometextiles1 from "@/assets/hometextiles/ho1.avif";
-import Hometextiles2 from "@/assets/hometextiles/ho2.avif";
-import Hometextiles3 from "@/assets/hometextiles/ho3.avif";
-import Hometextiles4 from "@/assets/hometextiles/ho4.avif";
-
-import Handbag1 from "@/assets/handbag/h1.avif";
-import Handbag2 from "@/assets/handbag/h2.avif";
-import Handbag3 from "@/assets/handbag/h3.avif";
-import Handbag4 from "@/assets/handbag/h4.avif";
-
-import Electronic1 from "@/assets/electronic/el1.avif";
-import Electronic2 from "@/assets/electronic/el2.avif";
-import Electronic3 from "@/assets/electronic/el3.avif";
-
-import Engine1 from "@/assets/engines/en1.webp";
-import Engine2 from "@/assets/engines/en2.avif";
-import Engine3 from "@/assets/engines/en3.avif";
-
-import Ind1 from "@/assets/ind/ind1.avif";
-import Ind2 from "@/assets/ind/ind2.avif";
-import Ind3 from "@/assets/ind/ind3.avif";
-import Ind4 from "@/assets/ind/ind4.avif";
-
-import Tool1 from "@/assets/tools/tool1.avif";
-import Tool2 from "@/assets/tools/tool2.avif";
-
-import Vehicles1 from "@/assets/vehicles/ve1.webp";
-import Vehicles2 from "@/assets/vehicles/ve2.avif";
-import Vehicles3 from "@/assets/vehicles/ve3.avif";
-import Vehicles4 from "@/assets/vehicles/ve4.avif";
-
-import Building1 from "@/assets/building/bu1.webp";
-import Building2 from "@/assets/building/bu2.avif";
-import Building3 from "@/assets/building/bu3.avif";
-import Building4 from "@/assets/building/bu4.avif";
-import Building5 from "@/assets/building/bu5.avif";
-
-import Hardware1 from "@/assets/hardware/hardware1.avif";
-import Hardware2 from "@/assets/hardware/hardware2.avif";
-
-import Household1 from "@/assets/household/household1.avif";
-import Household2 from "@/assets/household/household2.avif";
-import Household3 from "@/assets/household/household3.avif";
-import Household4 from "@/assets/household/household4.avif";
-
-import Jewelry1 from "@/assets/jewelry/jewelry1.avif";
-import Jewelry2 from "@/assets/jewelry/jewelry2.avif";
-import Jewelry3 from "@/assets/jewelry/jewelry3.avif";
-
-import Metal1 from "@/assets/metals/metals1.avif";
-import Metal2 from "@/assets/metals/metals2.avif";
-import Metal3 from "@/assets/metals/metals3.avif";
-import Metal4 from "@/assets/metals/metals4.avif";
-
-import Fb1 from "@/assets/fabrication/fb1.avif";
-import Fb2 from "@/assets/fabrication/fb2.avif";
-import Fb3 from "@/assets/fabrication/fb3.avif";
-
-import Furniture1 from "@/assets/furniture/fr1.avif";
-import Furniture3 from "@/assets/furniture/fr3.avif";
-import Furniture4 from "@/assets/furniture/fr4.avif";
-
-import Wood1 from "@/assets/wood/wood1.webp";
-import Wood2 from "@/assets/wood/wood2.avif";
-import Wood3 from "@/assets/wood/wood3.avif";
-import Wood4 from "@/assets/wood/wood4.avif";
-import Wood5 from "@/assets/wood/wood5.avif";
-
-import Wo1 from "@/assets/woodan/wo1.avif";
-import Wo2 from "@/assets/woodan/wo2.avif";
-
-import Antique1 from "@/assets/antique/an1.avif";
-import Antique2 from "@/assets/antique/an2.avif";
-import Antique3 from "@/assets/antique/an3.avif";
-import Antique4 from "@/assets/antique/an4.avif";
-import Antique5 from "@/assets/antique/an5.avif";
-
-import Gold1 from "@/assets/gold/gold1.webp";
-import Gold2 from "@/assets/gold/gold2.avif";
-import Gold3 from "@/assets/gold/gold3.avif";
-import Gold4 from "@/assets/gold/gold4.avif";
-
-import Art1 from "@/assets/art/art1.avif";
-import Art2 from "@/assets/art/art2.avif";
-
-import Baby1 from "@/assets/baby/baby1.webp";
-import Baby2 from "@/assets/baby/baby2.avif";
-
-import Gift1 from "@/assets/gift/gift1.avif";
-import Gift2 from "@/assets/gift/gift2.avif";
-import Gift3 from "@/assets/gift/gift3.avif";
-import Gift4 from "@/assets/gift/gift4.avif";
-
-import Watch1 from "@/assets/watches/watch1.avif";
-import Watch2 from "@/assets/watches/watch2.avif";
-import Watch3 from "@/assets/watches/watch3.avif";
-
-import Toys1 from "@/assets/toys/toys1.avif";
-import Toys2 from "@/assets/toys/toys2.avif";
-
 import {
   Apple,
   Zap,
@@ -193,6 +14,11 @@ import {
   CommodityDescription,
   createDescriptionItem as item,
 } from "@/components/CommodityDescription";
+import { lazyImg } from "@/lib/lazyImages";
+
+// Remove all static image imports - images will now load on demand
+// OLD: import BeefPoultryFish from "@/assets/seafood/Beef-Poultry-Fish.webp";
+// NEW: Uses lazyImg("seafood/Beef-Poultry-Fish.webp") inline
 
 export interface Commodity {
   id: string;
@@ -249,10 +75,10 @@ export const commoditiesData: CommodityCategory[] = [
           </>
         ),
         images: [
-          BeefPoultryFish,
-          Meat2,
-          MeatPoultrySeafood,
-          MeatPoultrySeafood2,
+          lazyImg("seafood/Beef-Poultry-Fish.webp"),
+          lazyImg("seafood/meat-2.webp"),
+          lazyImg("seafood/meat-poultry-seafood.webp"),
+          lazyImg("seafood/meat-seafood-34-thumb.webp"),
         ], // Multiple images for gallery
         specifications: [
           "Fresh meat & meat products",
@@ -325,7 +151,13 @@ export const commoditiesData: CommodityCategory[] = [
             ]}
           />
         ),
-        images: [Dairy1, Dairy2, Dairy3, Dairy4, Dairy5], // 2 images for demo
+        images: [
+          lazyImg("dairy/d1.webp"),
+          lazyImg("dairy/d2.webp"),
+          lazyImg("dairy/d3.webp"),
+          lazyImg("dairy/d4.webp"),
+          lazyImg("dairy/d5.webp"),
+        ], // 2 images for demo
         specifications: [
           "Fresh dairy products",
           "Animal and plant-based fats",
@@ -403,7 +235,12 @@ export const commoditiesData: CommodityCategory[] = [
           />
         ),
 
-        images: [Vagies1, Vagies2, Vagies3, Vagies4], // 4 images for demo
+        images: [
+          lazyImg("vagies/v1.webp"),
+          lazyImg("vagies/v2.webp"),
+          lazyImg("vagies/v3.webp"),
+          lazyImg("vagies/v4.webp"),
+        ], // 4 images for demo
         specifications: [
           "Seasonal fresh fruits & vegetables",
           "Premium nuts & dry fruits",
@@ -421,7 +258,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "grains-bakery-staples",
         name: "Grains, Bakery & Processed Staples",
-        images: [Bakery1, Bakery2, Bakery3, Bakery4],
+        images: [
+          lazyImg("bakery/b1.avif"),
+          lazyImg("bakery/b2.avif"),
+          lazyImg("bakery/b3.avif"),
+          lazyImg("bakery/b4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Broad export category covering grains, flours, starches, bakery, pasta, and processed staples."
@@ -460,7 +302,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "sweets-confectionery",
         name: "Sweets & Confectionery",
-        images: [Sweet1, Sweet2, Sweet3],
+        images: [
+          lazyImg("sweet/s1.avif"),
+          lazyImg("sweet/s2.avif"),
+          lazyImg("sweet/s3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Premium confectionery and sweet products for global markets."
@@ -519,7 +365,12 @@ export const commoditiesData: CommodityCategory[] = [
             ]}
           />
         ),
-        images: [Beverage1, Beverage2, Beverage3, Beverage4],
+        images: [
+          lazyImg("beverages/be1.avif"),
+          lazyImg("beverages/be2.avif"),
+          lazyImg("beverages/be3.avif"),
+          lazyImg("beverages/be4.avif"),
+        ],
         specifications: [
           "Premium tea & coffee varieties",
           "Quality cocoa products",
@@ -537,7 +388,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "sauces-condiments-ready-foods",
         name: "Sauces, Condiments & Ready Foods",
-        images: [Sauces1, Sauces2, Sauces3, Sauces4],
+        images: [
+          lazyImg("sauces/sa1.avif"),
+          lazyImg("sauces/sa2.avif"),
+          lazyImg("sauces/sa3.avif"),
+          lazyImg("sauces/sa4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Full-spectrum category: sauce bases, finished condiments, soups, gravies, and ready-to-eat meals."
@@ -588,7 +444,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "agricultural-agrochemicals",
         name: "Agricultural & Agrochemicals",
-        images: [Agricultural1, Agricultural2, Agricultural3, Agricultural4],
+        images: [
+          lazyImg("agricultural/a1.avif"),
+          lazyImg("agricultural/a2.avif"),
+          lazyImg("agricultural/a3.avif"),
+          lazyImg("agricultural/a4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Comprehensive category: fertilizers, crop-protection, seeds, adjuvants, and biostimulants."
@@ -627,7 +488,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "basic-specialty-chemicals",
         name: "Basic & Specialty Chemicals",
-        images: [Chemical1, Chemical2, Chemical3, Chemical4],
+        images: [
+          lazyImg("chemical/c1.webp"),
+          lazyImg("chemical/c2.webp"),
+          lazyImg("chemical/c3.avif"),
+          lazyImg("chemical/c4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Broad portfolio covering inorganic, organic, polymeric, and formulated specialty chemicals."
@@ -665,7 +531,13 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "industrial-chemicals-applications",
         name: "Industrial Chemicals & Applications",
-        images: [Dyes1, Dyes2, Dyes3, Dyes4, Dyes5],
+        images: [
+          lazyImg("dyes/dy1.avif"),
+          lazyImg("dyes/dy2.avif"),
+          lazyImg("dyes/dy3.avif"),
+          lazyImg("dyes/dy4.avif"),
+          lazyImg("dyes/dy5.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Broad portfolio spanning base inorganics/organics, solvents, intermediates, polymers, and specialty additives."
@@ -704,7 +576,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "paints-coatings-additives",
         name: "Paints, Coatings & Additives",
-        images: [Paint1, Paint2, Paint3],
+        images: [
+          lazyImg("paints/p1.avif"),
+          lazyImg("paints/p2.avif"),
+          lazyImg("paints/p3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Comprehensive portfolio: binders/resins, pigments, solvents, dispersions, additives, and finished coatings/inks."
@@ -743,7 +619,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "plastics-rubber",
         name: "Plastics & Rubber",
-        images: [Rubber1, Rubber2, Rubber3],
+        images: [
+          lazyImg("rubber/r1.avif"),
+          lazyImg("rubber/r2.avif"),
+          lazyImg("rubber/r3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Complete product range: polymers, elastomers, compounds, masterbatches, and recyclates."
@@ -782,7 +662,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "energy-fuels-gases",
         name: "Energy, Fuels & Gases",
-        images: [Gas1, Gas2, Gas3, Gas4],
+        images: [
+          lazyImg("gas/g1.avif"),
+          lazyImg("gas/g2.avif"),
+          lazyImg("gas/g3.avif"),
+          lazyImg("gas/g4.webp"),
+        ],
         description: (
           <CommodityDescription
             intro="Broad portfolio: crude oil, refined fuels, LNG/LPG, industrial gases, lubricants, coal, coke, and biofuels."
@@ -833,7 +718,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "leather-leather-products",
         name: "Leather & Leather Products",
-        images: [Leather1, Leather2, Leather3, Leather4],
+        images: [
+          lazyImg("leather/le1.avif"),
+          lazyImg("leather/le2.avif"),
+          lazyImg("leather/le3.avif"),
+          lazyImg("leather/le4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Category spans wet-salted/wet-blue/crust hides, finished leathers, and made-ups (belts, wallets, bags, footwear uppers)."
@@ -872,7 +762,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "textile-fabrics-fibers",
         name: "Textile Fabrics & Fibers",
-        images: [Textile1, Textile2, Textile3, Textile4],
+        images: [
+          lazyImg("textile/te1.avif"),
+          lazyImg("textile/te2.avif"),
+          lazyImg("textile/te3.avif"),
+          lazyImg("textile/te4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio covers fibers, yarns, woven/knitted fabrics, technical textiles, and finishes."
@@ -910,7 +805,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "garments-apparel",
         name: "Garments & Apparel",
-        images: [Garments1, Garments2, Garments3, Garments4],
+        images: [
+          lazyImg("garments/ga1.avif"),
+          lazyImg("garments/ga2.avif"),
+          lazyImg("garments/ga3.avif"),
+          lazyImg("garments/ga4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Coverage includes knitwear, wovens, denim, outerwear, activewear, uniforms, and kidswear."
@@ -948,7 +848,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "home-floor-textiles",
         name: "Home & Floor Textiles",
-        images: [Hometextiles1, Hometextiles2, Hometextiles3, Hometextiles4],
+        images: [
+          lazyImg("hometextiles/ho1.avif"),
+          lazyImg("hometextiles/ho2.avif"),
+          lazyImg("hometextiles/ho3.avif"),
+          lazyImg("hometextiles/ho4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Category spans bed/bath linen, curtains, upholstery, table linen, rugs, carpets, and mats."
@@ -986,7 +891,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "fashion-accessories",
         name: "Fashion & Accessories",
-        images: [Handbag1, Handbag2, Handbag3, Handbag4],
+        images: [
+          lazyImg("handbag/h1.avif"),
+          lazyImg("handbag/h2.avif"),
+          lazyImg("handbag/h3.avif"),
+          lazyImg("handbag/h4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Range covers handbags, small leather goods, belts, scarves, hats, wallets, and fashion jewelry."
@@ -1039,7 +949,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "industrial-heavy-machinery",
         name: "Industrial & Heavy Machinery",
-        images: [Ind1, Ind2, Ind3, Ind4],
+        images: [
+          lazyImg("ind/ind1.avif"),
+          lazyImg("ind/ind2.avif"),
+          lazyImg("ind/ind3.avif"),
+          lazyImg("ind/ind4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio covers construction, mining, material handling, metalworking, and process-plant machinery."
@@ -1078,7 +993,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "engines-power-energy-equipment",
         name: "Engines, Power & Energy Equipment",
-        images: [Engine1, Engine2, Engine3],
+        images: [
+          lazyImg("engines/en1.webp"),
+          lazyImg("engines/en2.avif"),
+          lazyImg("engines/en3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Coverage includes diesel/gas engines, gensets, turbines, alternators, switchgear, and balance-of-plant."
@@ -1116,7 +1035,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "electrical-electronic-equipment",
         name: "Electrical & Electronic Equipment",
-        images: [Electronic1, Electronic2, Electronic3],
+        images: [
+          lazyImg("electronic/el1.avif"),
+          lazyImg("electronic/el2.avif"),
+          lazyImg("electronic/el3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Range includes switchgear, drives, transformers, cables, control panels, sensors, and industrial electronics."
@@ -1154,7 +1077,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "vehicles-transportation",
         name: "Vehicles & Transportation",
-        images: [Vehicles1, Vehicles2, Vehicles3, Vehicles4],
+        images: [
+          lazyImg("vehicles/ve1.webp"),
+          lazyImg("vehicles/ve2.avif"),
+          lazyImg("vehicles/ve3.avif"),
+          lazyImg("vehicles/ve4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio spans passenger/commercial vehicles, buses, trailers, off-highway equipment, and material movers."
@@ -1192,7 +1120,7 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "tools-precision-equipment",
         name: "Tools & Precision Equipment",
-        images: [Tool1, Tool2],
+        images: [lazyImg("tools/tool1.avif"), lazyImg("tools/tool2.avif")],
         description: (
           <CommodityDescription
             intro="Coverage includes hand tools, power tools, cutting tools, metrology, fixtures, and test instruments."
@@ -1240,7 +1168,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "metals-alloys",
         name: "Metals & Alloys",
-        images: [Metal1, Metal2, Metal3, Metal4],
+        images: [
+          lazyImg("metals/metals1.avif"),
+          lazyImg("metals/metals2.avif"),
+          lazyImg("metals/metals3.avif"),
+          lazyImg("metals/metals4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Coverage: ferrous (carbon/alloy/stainless) and non-ferrous (Al, Cu, Ni, Zn, Ti) metals and master alloys."
@@ -1279,7 +1212,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "metal-products-fabrications",
         name: "Metal Products & Fabrications",
-        images: [Fb1, Fb2, Fb3],
+        images: [
+          lazyImg("fabrication/fb1.avif"),
+          lazyImg("fabrication/fb2.avif"),
+          lazyImg("fabrication/fb3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio: laser/plasma cut parts, formed/welded structures, sheet-metal enclosures, frames, railings, and assemblies."
@@ -1318,7 +1255,13 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "building-construction-materials",
         name: "Building & Construction Materials",
-        images: [Building1, Building2, Building3, Building4, Building5],
+        images: [
+          lazyImg("building/bu1.webp"),
+          lazyImg("building/bu2.avif"),
+          lazyImg("building/bu3.avif"),
+          lazyImg("building/bu4.avif"),
+          lazyImg("building/bu5.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Category spans cement, aggregates, blocks/bricks, rebar/structurals, roofing, insulation, glass, doors/windows, and tiles."
@@ -1357,7 +1300,10 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "hardware-tools-fittings",
         name: "Hardware, Tools & Fittings",
-        images: [Hardware1, Hardware2],
+        images: [
+          lazyImg("hardware/hardware1.avif"),
+          lazyImg("hardware/hardware2.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Range: fasteners, anchors, hinges, locks, handles, glass/door fittings, plumbing/brassware, and cabinet hardware."
@@ -1396,7 +1342,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "household-kitchen-laboratory-items",
         name: "Household, Kitchen & Laboratory Items",
-        images: [Household1, Household2, Household3, Household4],
+        images: [
+          lazyImg("household/household1.avif"),
+          lazyImg("household/household2.avif"),
+          lazyImg("household/household3.avif"),
+          lazyImg("household/household4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio: stainless-steel cookware/utensils, cast aluminum, glassware, ceramic tableware, plastic storage, and basic labware."
@@ -1435,7 +1386,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "jewelry-stones",
         name: "Jewelry & Stones",
-        images: [Jewelry1, Jewelry2, Jewelry3],
+        images: [
+          lazyImg("jewelry/jewelry1.avif"),
+          lazyImg("jewelry/jewelry2.avif"),
+          lazyImg("jewelry/jewelry3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Range covers fine jewelry (gold/silver/platinum), fashion jewelry, loose diamonds, and colored gemstones."
@@ -1485,7 +1440,13 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "raw-processed-wood",
         name: "Raw & Processed Wood",
-        images: [Wood1, Wood2, Wood3, Wood4, Wood5],
+        images: [
+          lazyImg("wood/wood1.webp"),
+          lazyImg("wood/wood2.avif"),
+          lazyImg("wood/wood3.avif"),
+          lazyImg("wood/wood4.avif"),
+          lazyImg("wood/wood5.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio spans round logs, sawn timber, KD/AD lumber, veneers, plywood, LVL/CLT, MDF/HDF, and chips/pellets."
@@ -1524,7 +1485,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "furniture-furnishings",
         name: "Furniture & Furnishings",
-        images: [Furniture1, Furniture3, Furniture4],
+        images: [
+          lazyImg("furniture/fr1.avif"),
+          lazyImg("furniture/fr3.avif"),
+          lazyImg("furniture/fr4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Coverage: case goods, seating, dining/bedroom sets, cabinetry, modular/flat-pack, outdoor, and upholstery."
@@ -1563,7 +1528,7 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "wooden-articles-utilities",
         name: "Wooden Articles & Utilities",
-        images: [Wo1, Wo2],
+        images: [lazyImg("woodan/wo1.avif"), lazyImg("woodan/wo2.avif")],
         description: (
           <CommodityDescription
             intro="Range includes kitchenware (boards, bowls, utensils), home décor, organizers, toys/games, and pallets/crates."
@@ -1614,7 +1579,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "precious-metals-commodities",
         name: "Precious Metals Commodities",
-        images: [Gold1, Gold2, Gold3, Gold4],
+        images: [
+          lazyImg("gold/gold1.webp"),
+          lazyImg("gold/gold2.avif"),
+          lazyImg("gold/gold3.avif"),
+          lazyImg("gold/gold4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Full-spectrum coverage: gold, silver, platinum, palladium, jewelry articles, and bullion/coins for investment and industry."
@@ -1665,7 +1635,7 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "toys-games-sports",
         name: "Toys, Games & Sports",
-        images: [Toys1, Toys2],
+        images: [lazyImg("toys/toys1.avif"), lazyImg("toys/toys2.avif")],
         description: (
           <CommodityDescription
             intro="Category includes indoor/outdoor toys, puzzles, educational kits, playground sets, and sports gear."
@@ -1703,7 +1673,7 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "arts-music-education",
         name: "Arts, Music & Education",
-        images: [Art1, Art2],
+        images: [lazyImg("art/art1.avif"), lazyImg("art/art2.avif")],
         description: (
           <CommodityDescription
             intro="Covers art supplies, musical instruments, educational aids, stationery, and creative kits."
@@ -1740,7 +1710,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "gifts-handicrafts-decorative",
         name: "Gifts, Handicrafts & Decorative Items",
-        images: [Gift1, Gift2, Gift3, Gift4],
+        images: [
+          lazyImg("gift/gift1.avif"),
+          lazyImg("gift/gift2.avif"),
+          lazyImg("gift/gift3.avif"),
+          lazyImg("gift/gift4.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Portfolio includes handmade crafts, glass/ceramic décor, souvenirs, candles, and seasonal gifts."
@@ -1777,7 +1752,11 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "fashion-personal-accessories",
         name: "Fashion & Personal Accessories",
-        images: [Watch1, Watch2, Watch3],
+        images: [
+          lazyImg("watches/watch1.avif"),
+          lazyImg("watches/watch2.avif"),
+          lazyImg("watches/watch3.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Category covers handbags, wallets, belts, scarves, sunglasses, watches, and jewelry accessories."
@@ -1814,7 +1793,12 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "household-daily-use-items",
         name: "Household & Daily Use Items",
-        images: [Baby1, Baby2, Household1, Household2],
+        images: [
+          lazyImg("baby/baby1.webp"),
+          lazyImg("baby/baby2.avif"),
+          lazyImg("household/household1.avif"),
+          lazyImg("household/household2.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Range includes home essentials, storage, cleaning tools, organizers, utensils, and lifestyle items."
@@ -1863,7 +1847,13 @@ export const commoditiesData: CommodityCategory[] = [
       {
         id: "antique-commodities",
         name: "Antique Commodities",
-        images: [Antique1, Antique2, Antique3, Antique4, Antique5],
+        images: [
+          lazyImg("antique/an1.avif"),
+          lazyImg("antique/an2.avif"),
+          lazyImg("antique/an3.avif"),
+          lazyImg("antique/an4.avif"),
+          lazyImg("antique/an5.avif"),
+        ],
         description: (
           <CommodityDescription
             intro="Category includes antique furniture, jewelry, paintings, coins, manuscripts, and archaeological artifacts."

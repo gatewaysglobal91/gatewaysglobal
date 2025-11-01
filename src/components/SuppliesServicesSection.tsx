@@ -1,6 +1,16 @@
 import suppliesServicesImg from "@/assets/supplies-services.webp";
+import { useEffect, useState } from "react";
 
 export default function SuppliesServicesSection() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    // Preload the background image
+    const img = new Image();
+    img.src = suppliesServicesImg;
+    img.onload = () => setImageLoaded(true);
+  }, []);
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -8,9 +18,19 @@ export default function SuppliesServicesSection() {
           {/* Image with Overlay Content */}
           <div className="relative rounded-2xl overflow-hidden animate-fade-in-up">
             <div
-              className="h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${suppliesServicesImg})` }}
+              className={`h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ${
+                imageLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              style={{
+                backgroundImage: imageLoaded
+                  ? `url(${suppliesServicesImg})`
+                  : "none",
+              }}
             >
+              {/* Loading placeholder */}
+              {!imageLoaded && (
+                <div className="absolute inset-0 bg-muted animate-pulse" />
+              )}
               {/* Gradient Overlay - Stronger on mobile */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30 lg:bg-gradient-to-r lg:from-black/70 lg:via-black/40 lg:to-transparent"></div>
 
