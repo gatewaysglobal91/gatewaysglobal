@@ -39,7 +39,7 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed px-4 animate-slide-in-left animate-delay-400">
-            Founded with excellence in mind, we are a leading UK-based import
+            Gateways Global Ltd - founded with excellence in mind, we are a leading UK-based import
             & export firm specializing in global trade. We meet customers'
             ever-changing needs through dependable service and continual
             expansion of product lines across diverse industries.
