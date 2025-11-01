@@ -25,23 +25,24 @@ export default function HeroSection() {
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 animate-bounce-in">
             <Globe className="h-4 w-4 mr-2 animate-float" />
             <span className="text-sm font-medium">
-              A Leading Supplier to Oil & Gas Industry
+              UK-Based Global Import & Export Firm
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl font-bold leading-tight animate-fade-in-up animate-delay-200">
-            Gateways Global Co.
+            Gateways Global Ltd
             <span className="block bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent animate-pulse-glow">
-              Excellence
+              Trading Excellence
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed animate-slide-in-left animate-delay-400">
-            Founded with excellence in mind, we are a leading supplier to the
-            Oil & Gas Industry. We meet customers' ever-changing needs through
-            dependable service and continual expansion of product lines.
+            Founded with excellence in mind, we are a leading UK-based import
+            & export firm specializing in global trade. We meet customers'
+            ever-changing needs through dependable service and continual
+            expansion of product lines across diverse industries.
           </p>
 
           {/* Stats */}

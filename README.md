@@ -36,6 +36,42 @@ npm i
 npm run dev
 ```
 
+### Running in VS Code
+
+**Prerequisites:**
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- VS Code installed
+
+**Steps:**
+
+1. **Open the project in VS Code:**
+   ```sh
+   cd gatewaysglobal
+   code .
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+
+4. **Access the application:**
+   - The terminal will display a local URL (typically `http://localhost:5173`)
+   - Open this URL in your browser to view the application
+
+**Additional VS Code Scripts:**
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run lint` - Run ESLint to check code quality
+- `npm run preview` - Preview the production build
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).
