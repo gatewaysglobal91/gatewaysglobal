@@ -127,10 +127,10 @@ const ContactUs = () => {
                   <Mail className="h-10 w-10 text-white" />
                 </div>
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-in-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 animate-slide-in-left">
                 Get In Touch With Us
               </h1>
-              <p className="text-xl text-white/90 max-w-2xl mx-auto animate-fade-in-up animate-delay-200">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto px-4 animate-fade-in-up animate-delay-200">
                 Have questions or need assistance? We're here to help you with
                 all your import and export needs.
               </p>
@@ -141,18 +141,18 @@ const ContactUs = () => {
             {/* Contact Form - Main Column */}
             <div className="lg:col-span-2 animate-fade-in-up animate-delay-400">
               <div className="bg-card border border-border/50 rounded-2xl shadow-2xl overflow-hidden">
-                <div className="bg-gradient-to-r from-primary to-blue-600 p-8">
-                  <h2 className="text-3xl font-bold text-white flex items-center">
-                    <MessageSquare className="mr-3 h-8 w-8" />
+                <div className="bg-gradient-to-r from-primary to-blue-600 p-6 md:p-8">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white flex items-center">
+                    <MessageSquare className="mr-2 md:mr-3 h-6 w-6 md:h-8 md:w-8" />
                     Send Us A Message
                   </h2>
-                  <p className="text-white/90 mt-2">
+                  <p className="text-white/90 mt-2 text-sm md:text-base">
                     Fill out the form below and we'll get back to you within 24
                     hours
                   </p>
                 </div>
 
-                <div className="p-8">
+                <div className="p-4 sm:p-6 md:p-8">
                   {isSubmitted && (
                     <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center text-green-800 animate-fade-in-up">
                       <CheckCircle2 className="h-5 w-5 mr-3 flex-shrink-0" />
@@ -362,11 +362,11 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Information Sidebar */}
-            <div className="space-y-6 animate-fade-in-up animate-delay-600">
+            <div className="space-y-4 md:space-y-6 animate-fade-in-up animate-delay-600">
               {/* Contact Details Card */}
-              <div className="bg-card border border-border/50 rounded-2xl p-6 shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 flex items-center">
-                  <Mail className="mr-3 h-6 w-6 text-primary" />
+              <div className="bg-card border border-border/50 rounded-2xl p-4 md:p-6 shadow-lg">
+                <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 flex items-center">
+                  <Mail className="mr-2 md:mr-3 h-5 w-5 md:h-6 md:w-6 text-primary" />
                   Contact Details
                 </h3>
                 <div className="space-y-4">
@@ -423,14 +423,14 @@ const ContactUs = () => {
               </div>
 
               {/* Quick Response Card */}
-              <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 border border-primary/20 rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-3">
-                    <CheckCircle2 className="h-6 w-6 text-white" />
+              <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 border border-primary/20 rounded-2xl p-4 md:p-6 shadow-lg">
+                <div className="flex items-center mb-3 md:mb-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center mr-2 md:mr-3">
+                    <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold">Quick Response</h3>
+                  <h3 className="text-lg md:text-xl font-bold">Quick Response</h3>
                 </div>
-                <p className="text-muted-foreground mb-3">
+                <p className="text-sm md:text-base text-muted-foreground mb-2 md:mb-3">
                   We typically respond within{" "}
                   <span className="font-bold text-primary">24 hours</span>{" "}
                   during business days.
@@ -438,8 +438,8 @@ const ContactUs = () => {
               </div>
 
               {/* Why Contact Us Card */}
-              <div className="bg-card border border-border/50 rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Why Contact Us?</h3>
+              <div className="bg-card border border-border/50 rounded-2xl p-4 md:p-6 shadow-lg">
+                <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">Why Contact Us?</h3>
                 <ul className="space-y-3">
                   {[
                     "Product Inquiries",

@@ -33,10 +33,10 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer Content */}
-      <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="container py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
           {/* Company Info - Left */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div className="flex items-center space-x-3">
               <img
                 src={gatewaysLogo}
@@ -64,11 +64,14 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-white/80">
                 <Phone className="h-5 w-5 text-secondary" />
-                <span>+1 (555) 123-4567</span>
+                <div className="flex flex-col space-y-1">
+                  <span>+44 7984791471</span>
+                  <span>+44 7519150583</span>
+                </div>
               </div>
               <div className="flex items-center space-x-3 text-white/80">
                 <MapPin className="h-5 w-5 text-secondary" />
-                <span>123 Trade Center, Global City</span>
+                <span>Lyon road, Harrow HA1 2AF</span>
               </div>
             </div>
 
@@ -136,9 +139,8 @@ export default function Footer() {
                   Business Hours
                 </h5>
                 <div className="text-sm text-white/80 space-y-1">
-                  <div>Monday - Friday: 9:00 AM - 6:00 PM</div>
-                  <div>Saturday: 9:00 AM - 2:00 PM</div>
-                  <div>Sunday: Closed</div>
+                  <div>Monday - Saturday: 9:00 AM - 6:00 PM</div>
+                  <div>Sunday: 9:00 AM - 3:00 PM</div>
                 </div>
               </div>
 
@@ -166,9 +168,12 @@ export default function Footer() {
               © 2025 Gateways Global. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-white/70">
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                to="/privacy-policy"
+                className="hover:text-white transition-colors"
+              >
                 Privacy Policy
-              </a>
+              </Link>
               <Link
                 to="/terms-conditions"
                 className="hover:text-white transition-colors"
