@@ -391,9 +391,20 @@ const ContactUs = () => {
                       <p className="font-semibold text-sm text-muted-foreground">
                         Phone
                       </p>
-                      <p className="text-foreground font-medium">
-                        +44 (0) 123 456 7890
-                      </p>
+                      <div className="flex flex-col">
+                        <a
+                          href="tel:+447984791471"
+                          className="text-foreground hover:text-primary transition-colors font-medium"
+                        >
+                          +44 7984791471
+                        </a>
+                        <a
+                          href="tel:+447519150583"
+                          className="text-foreground hover:text-primary transition-colors font-medium"
+                        >
+                          +44 7519150583
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -404,7 +415,7 @@ const ContactUs = () => {
                         Address
                       </p>
                       <p className="text-foreground font-medium">
-                        London, United Kingdom
+                        Lyon road, Harrow HA1 2AF
                       </p>
                     </div>
                   </div>

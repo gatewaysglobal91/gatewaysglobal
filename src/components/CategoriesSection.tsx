@@ -39,11 +39,11 @@ const CategoriesSection = () => (
               } group`}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <CardHeader className="pb-4">
+              <CardHeader className="p-6 pb-5">
                 <div
                   className={`w-16 h-16 rounded-2xl ${
                     category.bgColor
-                  } flex items-center justify-center mb-4 animate-bounce-in animate-delay-${
+                  } flex items-center justify-center mb-5 animate-bounce-in animate-delay-${
                     (index + 2) * 100
                   } group-hover:animate-pulse-glow`}
                 >
@@ -53,23 +53,24 @@ const CategoriesSection = () => (
                   />
                 </div>
                 <Link to={`/category/${category.slug}`}>
-                  <CardTitle className="text-xl text-foreground leading-tight hover-scale group-hover:text-primary transition-colors">
+                  <CardTitle className="text-lg font-bold text-foreground leading-tight mb-2 hover-scale group-hover:text-primary transition-colors tracking-tight">
                     {category.name}
                   </CardTitle>
                 </Link>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="text-muted-foreground leading-relaxed">
+              <CardContent className="px-6 pb-6 pt-2">
+                <div className="text-sm text-muted-foreground leading-relaxed mb-5 pb-3">
                   {category.description}
                 </div>
 
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-sm text-foreground">
+                <div className="space-y-3 pt-4 border-t border-border/40">
+                  <h4 className="font-semibold text-xs uppercase tracking-wide text-foreground">
                     Key Products:
                   </h4>
-                  <ul className="grid grid-cols-2 gap-1 text-sm text-muted-foreground">
+                  <ul className="grid grid-cols-2 gap-x-3 gap-y-2 text-xs text-muted-foreground">
                     {category.commodities.map((item, itemIndex) => (
                       <Link
+                        key={itemIndex}
                         to={
                           item.id
                             ? `/category/${category.slug}/${item.id}`
@@ -77,10 +78,10 @@ const CategoriesSection = () => (
                         }
                       >
                         <li
-                          key={itemIndex}
-                          className="flex items-center hover:text-secondary transition-colors"
+                          className="flex items-start hover:text-secondary transition-colors group/item"
                         >
-                          {item.name}
+                          <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/40 mt-1.5 mr-2 flex-shrink-0 group-hover/item:bg-secondary group-hover/item:scale-110 transition-all"></span>
+                          <span className="line-clamp-2">{item.name}</span>
                         </li>
                       </Link>
                     ))}
