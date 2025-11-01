@@ -157,13 +157,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-20 sm:h-24 items-center justify-between">
         {/* Logo - Left */}
         <Link to="/" className="flex items-center space-x-3">
           <img
             src={gatewaysLogo}
             alt="Gateways Global"
-            className="h-10 w-auto"
+            className="h-14 sm:h-16 w-auto"
           />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-primary">

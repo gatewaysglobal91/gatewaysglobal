@@ -4,7 +4,7 @@ import HeroSectionVideo from "@/assets/4499159-uhd_2560_1440_30fps.mp4";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[600px] sm:min-h-[650px] lg:min-h-[700px] pt-20 sm:pt-16 lg:pt-0 flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[600px] sm:min-h-[650px] lg:min-h-[700px] pt-24 sm:pt-20 lg:pt-0 flex items-center justify-center overflow-hidden">
       {/* Background Video with Overlay - Lazy loaded */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -32,7 +32,7 @@ export default function HeroSection() {
           {/* Main Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight animate-fade-in-up animate-delay-200">
             Gateways Global Ltd
-            <span className="block bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent animate-pulse-glow mt-2">
+            <span className="block text-secondary mt-2">
               Trading Excellence
             </span>
           </h1>
@@ -72,9 +72,9 @@ export default function HeroSection() {
                 <PackageCheck className="h-8 w-8 text-secondary animate-bounce-in animate-delay-1100" />
               </div>
               <div className="text-3xl font-bold animate-scale-in animate-delay-1200">
-                9+
+                30+
               </div>
-              <div className="text-gray-300">Product Categories</div>
+              <div className="text-gray-300">Products & Commodities</div>
             </div>
           </div>
         </div>
