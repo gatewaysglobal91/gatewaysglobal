@@ -22,7 +22,7 @@ const limiter = rateLimit({
 app.use("/api/contact", limiter);
 
 // Handle preflight requests
-// app.options("*", cors());
+app.options("*", cors());
 
 // CORS configuration
 app.use(
@@ -31,17 +31,22 @@ app.use(
       // Allow requests with no origin (like mobile apps or curl requests)
       if (!origin) return callback(null, true);
 
-      const allowedOrigins = [
-        "http://localhost:4173", // Vite preview
-        "http://127.0.0.1:4173",
-      ];
+      // const allowedOrigins = [
+      //   "http://localhost:4173", // Vite preview
+      //   "http://127.0.0.1:4173",
+      //   "https://gatewaysglobal.vercel.app", // Production
+      // ];
 
-      if (allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        console.log("Blocked CORS request from origin:", origin);
-        callback(new Error("Not allowed by CORS"));
-      }
+      // // Check if origin matches allowed origins or Vercel preview deployments
+      // const isAllowed =
+      //   allowedOrigins.includes(origin) || origin.endsWith(".vercel.app");
+
+      // if (isAllowed) {
+      callback(null, true);
+      // } else {
+      //   console.log("Blocked CORS request from origin:", origin);
+      //   callback(new Error("Not allowed by CORS"));
+      // }
     },
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
