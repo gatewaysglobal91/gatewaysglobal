@@ -4,7 +4,7 @@ import HeroSectionVideo from "@/assets/4499159-uhd_2560_1440_30fps.mp4";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[600px] sm:min-h-[650px] lg:min-h-[700px] pt-24 sm:pt-20 lg:pt-0 flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[600px] sm:min-h-[650px] lg:min-h-[700px] pt-[72px] sm:pt-20 lg:pt-0 flex items-center justify-center overflow-hidden">
       {/* Background Video with Overlay - Lazy loaded */}
       <video
         className="absolute inset-0 w-full h-full object-cover"

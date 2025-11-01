@@ -157,7 +157,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 sm:h-24 items-center justify-between">
+      <div className="container flex h-[72px] sm:h-20 items-center justify-between">
         {/* Logo - Left */}
         <Link to="/" className="flex items-center space-x-3">
           <img
