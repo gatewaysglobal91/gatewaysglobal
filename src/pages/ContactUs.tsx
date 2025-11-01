@@ -68,8 +68,8 @@ const ContactUs = () => {
     setIsSubmitting(true);
 
     try {
-      // Send email via backend API
-      const response = await fetch("http://localhost:3001/api/contact", {
+      // Send email via Vercel serverless API
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

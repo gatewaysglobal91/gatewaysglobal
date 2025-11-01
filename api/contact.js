@@ -1,75 +1,53 @@
-import express from "express";
-import cors from "cors";
 import nodemailer from "nodemailer";
-import dotenv from "dotenv";
-import helmet from "helmet";
-import rateLimit from "express-rate-limit";
 
-dotenv.config();
+// Rate limiting store (in-memory)
+const rateLimitStore = new Map();
 
-const app = express();
-const PORT = process.env.PORT || 3001;
+// Rate limiting function
+const checkRateLimit = (ip) => {
+  const now = Date.now();
+  const windowMs = 15 * 60 * 1000; // 15 minutes
+  const maxRequests = 5;
 
-// Security middleware
-app.use(helmet());
+  if (!rateLimitStore.has(ip)) {
+    rateLimitStore.set(ip, [now]);
+    return true;
+  }
 
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // limit each IP to 5 requests per windowMs
-  message: "Too many requests from this IP, please try again later.",
-});
-app.use("/api/contact", limiter);
+  const requests = rateLimitStore
+    .get(ip)
+    .filter((time) => now - time < windowMs);
 
-// Handle preflight requests
-app.options("*", cors());
+  if (requests.length >= maxRequests) {
+    return false;
+  }
 
-// CORS configuration
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Allow requests with no origin (like mobile apps or curl requests)
-      if (!origin) return callback(null, true);
+  requests.push(now);
+  rateLimitStore.set(ip, requests);
+  return true;
+};
 
-      // const allowedOrigins = [
-      //   "http://localhost:4173", // Vite preview
-      //   "http://127.0.0.1:4173",
-      //   "https://gatewaysglobal.vercel.app", // Production
-      // ];
+// Clean up old entries periodically
+setInterval(() => {
+  const now = Date.now();
+  const windowMs = 15 * 60 * 1000;
 
-      // // Check if origin matches allowed origins or Vercel preview deployments
-      // const isAllowed =
-      //   allowedOrigins.includes(origin) || origin.endsWith(".vercel.app");
+  for (const [ip, requests] of rateLimitStore.entries()) {
+    const validRequests = requests.filter((time) => now - time < windowMs);
+    if (validRequests.length === 0) {
+      rateLimitStore.delete(ip);
+    } else {
+      rateLimitStore.set(ip, validRequests);
+    }
+  }
+}, 5 * 60 * 1000); // Clean every 5 minutes
 
-      // if (isAllowed) {
-      callback(null, true);
-      // } else {
-      //   console.log("Blocked CORS request from origin:", origin);
-      //   callback(new Error("Not allowed by CORS"));
-      // }
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: [
-      "Content-Type",
-      "Authorization",
-      "Accept",
-      "Origin",
-      "X-Requested-With",
-    ],
-  })
-);
-
-// Body parsing middleware
-app.use(express.json({ limit: "10mb" }));
-app.use(express.urlencoded({ extended: true }));
-
-// Create nodemailer transporter for Outlook
+// Create nodemailer transporter
 const createTransporter = () => {
   return nodemailer.createTransport({
     host: "smtp.ionos.co.uk",
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false,
     auth: {
       user: process.env.OUTLOOK_EMAIL,
       pass: process.env.OUTLOOK_PASSWORD,
@@ -153,13 +131,48 @@ const createEmailTemplate = (data) => {
   };
 };
 
-// Contact form endpoint
-app.post("/api/contact", async (req, res) => {
+export default async function handler(req, res) {
+  // Set CORS headers
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization, Accept, Origin, X-Requested-With"
+  );
+
+  // Handle preflight requests
+  if (req.method === "OPTIONS") {
+    res.status(200).end();
+    return;
+  }
+
+  // Only allow POST requests
+  if (req.method !== "POST") {
+    return res.status(405).json({
+      success: false,
+      message: "Method not allowed",
+    });
+  }
+
   console.log("📨 Contact form request received");
   console.log("Origin:", req.headers.origin);
   console.log("Body:", JSON.stringify(req.body, null, 2));
 
   try {
+    // Rate limiting
+    const ip =
+      req.headers["x-forwarded-for"] ||
+      req.connection.remoteAddress ||
+      "unknown";
+
+    if (!checkRateLimit(ip)) {
+      return res.status(429).json({
+        success: false,
+        message: "Too many requests from this IP, please try again later.",
+      });
+    }
+
     const { name, inquiryType, country, email, phone, subject, message } =
       req.body;
 
@@ -213,7 +226,7 @@ app.post("/api/contact", async (req, res) => {
 
     console.log("Email sent successfully:", info.messageId);
 
-    res.json({
+    res.status(200).json({
       success: true,
       message: "Message sent successfully! We'll get back to you soon.",
     });
@@ -224,44 +237,4 @@ app.post("/api/contact", async (req, res) => {
       message: "Failed to send message. Please try again later.",
     });
   }
-});
-
-// Health check endpoint
-app.get("/api/health", (req, res) => {
-  res.json({
-    status: "OK",
-    timestamp: new Date().toISOString(),
-    origin: req.headers.origin,
-    userAgent: req.headers["user-agent"],
-  });
-});
-
-// Test CORS endpoint
-app.get("/api/test-cors", (req, res) => {
-  res.json({
-    message: "CORS is working!",
-    origin: req.headers.origin,
-    timestamp: new Date().toISOString(),
-  });
-});
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({
-    success: false,
-    message: "Internal server error",
-  });
-});
-
-// 404 handler
-app.use("*", (req, res) => {
-  res.status(404).json({
-    success: false,
-    message: "API endpoint not found",
-  });
-});
-
-app.listen(PORT, () => {
-  console.log(`📧 Email service configured for Outlook`);
-});
+}
